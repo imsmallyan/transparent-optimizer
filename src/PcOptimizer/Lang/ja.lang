@@ -1,0 +1,3864 @@
+# App.xaml.cs
+程序遇到了一个错误，已记录到日志：\n\n
+=> エラーが発生しました。ログに記録されています：\n\n
+
+# App.xaml.cs
+出错了
+=> エラー
+
+# Core/Cleaner.cs
+用户临时文件
+=> ユーザーの一時ファイル
+
+# Core/Cleaner.cs
+%TEMP% 目录，程序运行时留下的临时文件（只删 24 小时前的）。
+=> %TEMP% フォルダー。プログラムの実行時に残された一時ファイル（24 時間以上前のもののみ削除）。
+
+# Core/Cleaner.cs
+系统临时文件
+=> システムの一時ファイル
+
+# Core/Cleaner.cs
+C:\Windows\Temp，系统和安装程序留下的临时文件。
+=> C:\Windows\Temp。システムやインストーラーが残した一時ファイル。
+
+# Core/Cleaner.cs
+缩略图缓存
+=> 縮小表示のキャッシュ
+
+# Core/Cleaner.cs
+资源管理器的缩略图数据库，删除后会自动重建。
+=> エクスプローラーの縮小表示データベース。削除しても自動的に再作成されます。
+
+# Core/Cleaner.cs
+系统错误报告
+=> システムのエラー報告
+
+# Core/Cleaner.cs
+Windows 错误报告（WER）留下的崩溃报告。
+=> Windows エラー報告（WER）が残したクラッシュレポート。
+
+# Core/Cleaner.cs
+程序崩溃转储
+=> クラッシュダンプ
+
+# Core/Cleaner.cs
+程序崩溃时生成的 .dmp 文件。
+=> プログラムのクラッシュ時に作成された .dmp ファイル。
+
+# Core/Cleaner.cs
+Chrome 浏览器缓存
+=> Chrome のキャッシュ
+
+# Core/Cleaner.cs
+只清缓存，不动密码、书签、Cookie 和历史记录。建议先关闭浏览器。
+=> キャッシュのみ削除し、パスワード・ブックマーク・Cookie・履歴には触れません。先にブラウザーを閉じることをお勧めします。
+
+# Core/Cleaner.cs
+Edge 浏览器缓存
+=> Edge のキャッシュ
+
+# Core/Cleaner.cs
+Windows 更新缓存
+=> Windows Update のキャッシュ
+
+# Core/Cleaner.cs
+已下载的更新安装包（SoftwareDistribution\Download）。正在更新时请勿清理。
+=> ダウンロード済みの更新プログラム（SoftwareDistribution\Download）。更新中は削除しないでください。
+
+# Core/Cleaner.cs
+正在扫描：{0}
+=> スキャン中：{0}
+
+# Core/Cleaner.cs
+正在清理 {0}/{1}
+=> 削除中 {0}/{1}
+
+# Core/Cleaner.cs
+文件正在使用
+=> ファイルが使用中です
+
+# Core/Cleaner.cs
+不在清理范围内
+=> 削除対象外です
+
+# Core/Cleaner.cs
+文件已不存在
+=> ファイルが存在しません
+
+# Core/Cleaner.cs
+是链接
+=> リンクです
+
+# Core/Cleaner.cs
+扫描后文件有变化
+=> スキャン後にファイルが変更されました
+
+# Core/ContextMenus.cs
+显示
+=> 表示
+
+# Core/ContextMenus.cs, Pages/Tools/MenuTool.xaml.cs
+已隐藏
+=> 非表示
+
+# Core/ContextMenus.cs
+菜单命令
+=> メニューコマンド
+
+# Core/ContextMenus.cs
+扩展组件
+=> シェル拡張
+
+# Core/ContextMenus.cs, Core/HealthCheck.cs, Core/NetControl.cs, Pages/Tools/DefenderTool.xaml.cs
+、
+=> 、
+
+# Core/ContextMenus.cs
+所有文件
+=> すべてのファイル
+
+# Core/ContextMenus.cs
+文件和文件夹
+=> ファイルとフォルダー
+
+# Core/ContextMenus.cs, Core/Residue.cs
+文件夹
+=> フォルダー
+
+# Core/ContextMenus.cs
+文件夹空白处
+=> フォルダーの背景
+
+# Core/ContextMenus.cs
+桌面空白处
+=> デスクトップの背景
+
+# Core/ContextMenus.cs, Pages/InfoPage.xaml
+磁盘
+=> ドライブ
+
+# Core/ContextMenus.cs, Core/Programs.cs, Core/Residue.cs, Core/StartupManager.cs
+无法打开注册表项
+=> レジストリキーを開けません
+
+# Core/Dedup.cs
+{0} 个相同文件 · 每个 {1}
+=> 同一ファイル {0} 個 · 各 {1}
+
+# Core/Dedup.cs
+正在列出文件
+=> ファイルを一覧表示中
+
+# Core/Dedup.cs
+正在计算 MD5
+=> MD5 を計算中
+
+# Core/Dedup.cs
+{0}：这一组没有可保留的文件（全部勾选了，或保留的文件已变化），整组跳过。
+=> {0}：このグループには残せるファイルがありません（すべて選択されているか、残すファイルが変更されています）。グループ全体をスキップしました。
+
+# Core/Dedup.cs
+{0}：文件已不存在
+=> {0}：ファイルが存在しません
+
+# Core/Dedup.cs
+{0}：扫描后被修改过，已跳过。
+=> {0}：スキャン後に変更されたため、スキップしました。
+
+# Core/Dedup.cs, Core/Shredder.cs, Pages/StartupPage.xaml.cs, Pages/Tools/ShredTool.xaml.cs
+{0}：{1}
+=> {0}：{1}
+
+# Core/Defender.cs
+威胁 {0}
+=> 脅威 {0}
+
+# Core/Defender.cs
+严重
+=> 重大
+
+# Core/Defender.cs
+高危
+=> 高
+
+# Core/Defender.cs
+中等
+=> 中
+
+# Core/Defender.cs
+低危
+=> 低
+
+# Core/Defender.cs
+未知
+=> 不明
+
+# Core/Defender.cs
+已发现 未处理
+=> 検出済み 未処理
+
+# Core/Defender.cs
+已清除
+=> 駆除済み
+
+# Core/Defender.cs
+已隔离
+=> 検疫済み
+
+# Core/Defender.cs
+已删除
+=> 削除済み
+
+# Core/Defender.cs
+已允许（你选择了放行）
+=> 許可済み（許可を選択しました）
+
+# Core/Defender.cs
+已阻止
+=> ブロック済み
+
+# Core/Defender.cs
+隔离失败
+=> 検疫に失敗
+
+# Core/Defender.cs
+删除失败
+=> 削除に失敗
+
+# Core/Defender.cs
+放行失败
+=> 許可に失敗
+
+# Core/Defender.cs
+已放弃处理
+=> 処理を中止
+
+# Core/Defender.cs
+阻止失败
+=> ブロックに失敗
+
+# Core/Defender.cs
+状态未知
+=> 状態不明
+
+# Core/Defender.cs
+找不到 Microsoft Defender 的命令行工具 MpCmdRun.exe
+=> Microsoft Defender のコマンドラインツール MpCmdRun.exe が見つかりません
+
+# Core/DiskUsage.cs
+（此目录下的文件）
+=> （このフォルダー内のファイル）
+
+# Core/DiskUsage.cs
+正在统计：{0}
+=> 集計中：{0}
+
+# Core/HealthCheck.cs
+正在检查垃圾文件…
+=> ジャンクファイルを確認中…
+
+# Core/HealthCheck.cs
+垃圾文件
+=> ジャンクファイル
+
+# Core/HealthCheck.cs
+发现 {0} 可清理文件（{1} 个）
+=> 削除できるファイルが {0} あります（{1} 個）
+
+# Core/HealthCheck.cs
+垃圾文件很少
+=> ジャンクファイルはほとんどありません
+
+# Core/HealthCheck.cs
+去清理
+=> 削除する
+
+# Core/HealthCheck.cs
+正在检查回收站…
+=> ごみ箱を確認中…
+
+# Core/HealthCheck.cs, Core/StartupManager.cs, Pages/CleanPage.xaml.cs, Pages/CleanPage.xaml
+回收站
+=> ごみ箱
+
+# Core/HealthCheck.cs
+回收站里有 {0} 个项目，占用 {1}
+=> ごみ箱に {0} 個の項目があり、{1} を使用しています
+
+# Core/HealthCheck.cs
+回收站基本是空的
+=> ごみ箱はほぼ空です
+
+# Core/HealthCheck.cs
+正在检查开机启动项…
+=> スタートアップ項目を確認中…
+
+# Core/HealthCheck.cs, Pages/StartupPage.xaml
+开机启动项
+=> スタートアップ項目
+
+# Core/HealthCheck.cs
+有 {0} 个程序随开机启动，可能拖慢开机
+=> {0} 個のプログラムが起動時に実行され、起動が遅くなる可能性があります
+
+# Core/HealthCheck.cs
+有 {0} 个启动项，数量正常
+=> スタートアップ項目は {0} 個で、正常な数です
+
+# Core/HealthCheck.cs
+去管理
+=> 管理する
+
+# Core/HealthCheck.cs
+正在检查软件残留…
+=> アプリの残留物を確認中…
+
+# Core/HealthCheck.cs
+软件残留
+=> アプリの残留物
+
+# Core/HealthCheck.cs
+没有发现失效的启动项或卸载记录
+=> 無効なスタートアップ項目やアンインストール情報は見つかりませんでした
+
+# Core/HealthCheck.cs
+，
+=> 、
+
+# Core/HealthCheck.cs
+{0} 个启动项指向的程序已不存在
+=> {0} 個のスタートアップ項目のプログラムが存在しません
+
+# Core/HealthCheck.cs
+{0} 条卸载记录已失效
+=> {0} 件のアンインストール情報が無効です
+
+# Core/HealthCheck.cs
+正在检查磁盘空间…
+=> ディスクの空き容量を確認中…
+
+# Core/HealthCheck.cs
+系统盘空间
+=> システムドライブの空き容量
+
+# Core/HealthCheck.cs
+{0} 剩余 {1}（{2:0}%）
+=> {0} 空き {1}（{2:0}%）
+
+# Core/HealthCheck.cs
+，空间充足
+=> 、空き容量は十分です
+
+# Core/HealthCheck.cs
+，空间偏紧
+=> 、空き容量が少なめです
+
+# Core/HealthCheck.cs
+去分析
+=> 分析する
+
+# Core/HealthCheck.cs
+连续运行时间
+=> 連続稼働時間
+
+# Core/HealthCheck.cs
+已连续运行 {0} 天，建议找时间重启一次
+=> {0} 日間連続で稼働しています。一度再起動することをお勧めします
+
+# Core/HealthCheck.cs
+已运行 {0} 天 {1} 小时
+=> 稼働 {0} 日 {1} 時間
+
+# Core/HealthCheck.cs
+正在检查病毒防护…
+=> ウイルス対策を確認中…
+
+# Core/HealthCheck.cs, Pages/MorePage.xaml, Pages/Tools/DefenderTool.xaml
+病毒防护
+=> ウイルス対策
+
+# Core/HealthCheck.cs
+由 {0} 负责
+=> {0} が保護しています
+
+# Core/HealthCheck.cs
+没有检测到正在工作的杀毒软件
+=> 動作中のウイルス対策ソフトが検出されません
+
+# Core/HealthCheck.cs
+去查看
+=> 確認する
+
+# Core/HealthCheck.cs
+Defender 的实时保护已关闭
+=> Defender のリアルタイム保護がオフです
+
+# Core/HealthCheck.cs
+病毒库已经 {0} 天没更新
+=> ウイルス定義が {0} 日間更新されていません
+
+# Core/HealthCheck.cs
+去更新
+=> 更新する
+
+# Core/HealthCheck.cs
+Defender 实时保护已开启，病毒库是新的
+=> Defender のリアルタイム保護はオンで、ウイルス定義は最新です
+
+# Core/MemoryManager.cs
+开机自启
+=> 自動起動
+
+# Core/MemoryManager.cs
+自启已关闭
+=> 自動起動オフ
+
+# Core/MemoryManager.cs
+{0} 个进程 · 
+=> {0} 個のプロセス · 
+
+# Core/MemoryManager.cs
+{0}（进程 {1}）：{2}
+=> {0}（プロセス {1}）：{2}
+
+# Core/NetControl.cs
+上传限速 {0} KB/s
+=> アップロード制限 {0} KB/s
+
+# Core/NetControl.cs
+{0} 个连接
+=> {0} 個の接続
+
+# Core/NetControl.cs
+{0} 个端口在监听
+=> {0} 個のポートで待ち受け中
+
+# Core/NetControl.cs
+{0} 个 UDP 端口
+=> {0} 個の UDP ポート
+
+# Core/NetControl.cs
+未运行
+=> 未実行
+
+# Core/NetControl.cs
+当前没有连接
+=> 現在、接続はありません
+
+# Core/NetControl.cs
+ · 连到 
+=>  · 接続先 
+
+# Core/NetControl.cs
+ 等 {0} 个地址
+=>  ほか計 {0} 個のアドレス
+
+# Core/NetControl.cs
+进程 {0}
+=> プロセス {0}
+
+# Core/NetControl.cs
+系统（已断开、等待回收的连接）
+=> システム（切断済み・解放待ちの接続）
+
+# Core/NetControl.cs
+这台电脑上没有 Windows 防火墙组件
+=> この PC には Windows ファイアウォールのコンポーネントがありません
+
+# Core/NetControl.cs
+{0}（{1}）- {2}
+=> {0}（{1}）- {2}
+
+# Core/NetControl.cs
+出站
+=> 送信
+
+# Core/NetControl.cs
+入站
+=> 受信
+
+# Core/NetControl.cs
+由透明优化助手添加。删除这条规则即恢复联网。
+=> 透明最適化アシスタントが追加しました。このルールを削除するとネット接続が元に戻ります。
+
+# Core/Programs.cs
+版本 
+=> バージョン 
+
+# Core/Programs.cs
+卸载记录-
+=> アンインストール記録-
+
+# Core/RecycleBin.cs
+移到回收站失败（错误码 0x{0:X}），可能有文件正在使用。
+=> ごみ箱への移動に失敗しました（エラーコード 0x{0:X}）。使用中のファイルがある可能性があります。
+
+# Core/RecycleBin.cs
+没有全部移到回收站（可能有文件正在使用，或已取消）
+=> 一部をごみ箱に移動できませんでした（使用中のファイルがあるか、キャンセルされた可能性があります）
+
+# Core/RegBackup.cs
+注册表项不存在：
+=> レジストリキーが存在しません：
+
+# Core/Residue.cs
+注册表
+=> レジストリ
+
+# Core/Residue.cs
+启动项
+=> スタートアップ項目
+
+# Core/Residue.cs
+原安装目录
+=> 元のインストールフォルダー
+
+# Core/Residue.cs
+文件夹名与软件名一致
+=> フォルダー名がアプリ名と一致
+
+# Core/Residue.cs
+键名与软件名一致
+=> キー名がアプリ名と一致
+
+# Core/Residue.cs
+开机启动项 指向的程序已不存在
+=> スタートアップ項目（プログラムが存在しません）
+
+# Core/Residue.cs
+残留-
+=> 残留物-
+
+# Core/Residue.cs
+需要管理员权限
+=> 管理者権限が必要です
+
+# Core/Residue.cs
+{0}（{1}）
+=> {0}（{1}）
+
+# Core/Shredder.cs
+路径无效
+=> パスが無効です
+
+# Core/Shredder.cs
+不能粉碎整个磁盘
+=> ドライブ全体は完全削除できません
+
+# Core/Shredder.cs
+系统或软件目录里的文件不能粉碎
+=> システムやアプリのフォルダー内のファイルは完全削除できません
+
+# Core/Shredder.cs
+这个文件夹里包含系统目录
+=> このフォルダーにはシステムフォルダーが含まれています
+
+# Core/Shredder.cs
+不能整个粉碎用户文件夹（可以粉碎里面的文件）
+=> ユーザーフォルダー全体は完全削除できません（中のファイルは削除できます）
+
+# Core/Shredder.cs
+AppData 里是软件的数据，不能粉碎。
+=> AppData にはアプリのデータがあるため、完全削除できません。
+
+# Core/Shredder.cs
+不能粉碎本工具自己所在的文件夹
+=> このツール自身があるフォルダーは完全削除できません
+
+# Core/Shredder.cs
+文件正在被其他程序使用
+=> ファイルが他のプログラムで使用中です
+
+# Core/Shredder.cs
+没有权限（可能需要管理员身份）
+=> 権限がありません（管理者として実行する必要がある可能性があります）
+
+# Core/StartupManager.cs
+已启用
+=> 有効
+
+# Core/StartupManager.cs
+已禁用
+=> 無効
+
+# Core/StartupManager.cs
+当前用户（注册表）
+=> 現在のユーザー（レジストリ）
+
+# Core/StartupManager.cs
+所有用户（注册表）
+=> すべてのユーザー（レジストリ）
+
+# Core/StartupManager.cs
+所有用户·32位（注册表）
+=> すべてのユーザー・32 ビット（レジストリ）
+
+# Core/StartupManager.cs
+当前用户启动文件夹
+=> 現在のユーザーのスタートアップフォルダー
+
+# Core/StartupManager.cs
+所有用户启动文件夹
+=> すべてのユーザーのスタートアップフォルダー
+
+# Core/StartupManager.cs
+只能删除失效的启动项
+=> 削除できるのは無効なスタートアップ項目のみです
+
+# Core/StartupManager.cs
+启动项-
+=> スタートアップ項目-
+
+# Core/SysInfo.cs
+可用 {0} / 共 {1}
+=> 空き {0} / 合計 {1}
+
+# Core/SysInfo.cs
+（内部版本 {0}{1}）
+=> （ビルド {0}{1}）
+
+# Core/SysInfo.cs
+；
+=> ；
+
+# Core/SysInfo.cs
+操作系统
+=> OS
+
+# Core/SysInfo.cs
+计算机名
+=> コンピューター名
+
+# Core/SysInfo.cs
+处理器
+=> プロセッサ
+
+# Core/SysInfo.cs
+（{0} 线程）
+=> （{0} スレッド）
+
+# Core/SysInfo.cs
+内存
+=> メモリ
+
+# Core/SysInfo.cs
+共 {0}，可用 {1}（已用 {2:0}%）
+=> 合計 {0}、空き {1}（使用率 {2:0}%）
+
+# Core/SysInfo.cs
+显卡
+=> グラフィックス
+
+# Core/SysInfo.cs
+主板
+=> マザーボード
+
+# Core/SysInfo.cs
+已开机
+=> 稼働時間
+
+# Core/SysInfo.cs
+{0} 天 {1} 小时 {2} 分
+=> {0} 日 {1} 時間 {2} 分
+
+# Core/SysInfo.cs
+管理员权限
+=> 管理者権限
+
+# Core/SysInfo.cs
+是
+=> はい
+
+# Core/SysInfo.cs
+否（清理系统临时文件、修改“所有用户”启动项需要管理员）
+=> いいえ（システムの一時ファイルの削除や「すべてのユーザー」のスタートアップ項目の変更には管理者権限が必要です）
+
+# Dialog.cs
+知道了
+=> OK
+
+# Dialog.cs, Pages/Tools/NetTool.xaml.cs
+确定
+=> OK
+
+# Dialog.cs
+取消
+=> キャンセル
+
+# FileListWindow.cs
+{0} - {1} 个文件 {2}
+=> {0} - {1} 個のファイル {2}
+
+# FileListWindow.cs
+大小
+=> サイズ
+
+# FileListWindow.cs
+修改时间
+=> 更新日時
+
+# FileListWindow.cs
+路径（双击在资源管理器中定位）
+=> パス（ダブルクリックでエクスプローラーに表示）
+
+# FileListWindow.cs
+这里只是查看，不会删除。是否删除由清理页上的勾选决定。
+=> ここでは表示のみで、削除はしません。削除するかどうかはジャンク削除ページのチェックで決まります。
+
+# MainWindow.xaml.cs
+管理员模式
+=> 管理者モード
+
+# MainWindow.xaml.cs
+普通权限
+=> 通常の権限
+
+# MainWindow.xaml.cs
+透明优化助手 v{0}
+=> 透明最適化アシスタント v{0}
+
+# MainWindow.xaml.cs
+这个页面不接收拖入的文件。要粉碎或扫描文件，请先打开“更多功能”里的“文件粉碎”或“病毒防护”。
+=> このページにはファイルをドロップできません。ファイルを完全削除またはスキャンするには、先に「その他の機能」から「ファイル完全削除」または「ウイルス対策」を開いてください。
+
+# MainWindow.xaml.cs
+关于透明优化助手
+=> 透明最適化アシスタントについて
+
+# MainWindow.xaml.cs
+版本 {0}\n\n
+=> バージョン {0}\n\n
+
+# MainWindow.xaml.cs
+· 没有任何联网代码，源码可以逐行审查。\n
+=> · ネットワーク通信のコードは一切なく、ソースコードを 1 行ずつ確認できます。\n
+
+# MainWindow.xaml.cs
+· 不装服务、不加开机启动、不常驻后台，关闭窗口即完全退出。\n
+=> · サービスのインストール、自動起動の追加、常駐は一切なし。ウィンドウを閉じれば完全に終了します。\n
+
+# MainWindow.xaml.cs
+· 所有删除都先列出明细，确认后才执行。\n
+=> · 削除はすべて先に明細を表示し、確認後に実行します。\n
+
+# MainWindow.xaml.cs
+· 启动项只做“禁用/启用”，和任务管理器用的是同一套开关；只有指向程序已不存在的失效项才允许删除。\n
+=> · スタートアップ項目は「無効/有効」の切り替えのみで、タスク マネージャーと同じスイッチを使います。削除できるのはプログラムが存在しない無効な項目のみです。\n
+
+# MainWindow.xaml.cs
+· 卸载调用软件自带的卸载程序；残留文件夹移到回收站，注册表先备份成 .reg。\n
+=> · アンインストールはアプリ付属のアンインストーラーを使用します。残留フォルダーはごみ箱へ移動し、レジストリは先に .reg にバックアップします。\n
+
+# MainWindow.xaml.cs
+· 内存优化只列出你自己运行的软件，不碰系统进程；不做“一键清理内存”这种只是把内存挪到硬盘的操作。\n
+=> · メモリ最適化はあなたが実行したアプリのみを表示し、システムプロセスには触れません。メモリをディスクに移すだけの「ワンクリックメモリ解放」は行いません。\n
+
+# MainWindow.xaml.cs
+· 文件去重以 MD5 为准，删除前重新校验；联网控制只用 Windows 防火墙和 QoS 策略，不装驱动；右键菜单只隐藏不删除；文件粉碎要二次确认，系统和软件目录不允许粉碎。\n
+=> · 重複ファイル削除は MD5 で判定し、削除前に再確認します。ネット接続管理は Windows ファイアウォールと QoS ポリシーのみを使い、ドライバーはインストールしません。右クリックメニューは非表示にするだけで削除しません。ファイル完全削除は二重確認が必要で、システムやアプリのフォルダーは対象外です。\n
+
+# MainWindow.xaml.cs
+· 病毒防护不自带病毒库，用的是 Windows 自带的 Microsoft Defender。\n
+=> · ウイルス対策は独自のウイルス定義を持たず、Windows 標準の Microsoft Defender を使用します。\n
+
+# MainWindow.xaml.cs
+· 每次实际操作都记录在：{0}
+=> · 実際の操作はすべて次の場所に記録されます：{0}
+
+# Pages/CleanPage.xaml.cs
+本机没有这个目录
+=> この PC にはこのフォルダーがありません
+
+# Pages/CleanPage.xaml.cs
+很干净
+=> きれいです
+
+# Pages/CleanPage.xaml.cs
+正在统计回收站…
+=> ごみ箱を集計中…
+
+# Pages/CleanPage.xaml.cs
+{0} 个项目，占用 {1}。清空后无法恢复。
+=> {0} 個の項目、{1} を使用しています。空にすると復元できません。
+
+# Pages/CleanPage.xaml.cs
+无法读取回收站信息
+=> ごみ箱の情報を読み取れません
+
+# Pages/CleanPage.xaml.cs
+提示
+=> お知らせ
+
+# Pages/CleanPage.xaml.cs
+请至少勾选一个项目。
+=> 項目を 1 つ以上選択してください。
+
+# Pages/CleanPage.xaml.cs
+正在扫描…
+=> スキャン中…
+
+# Pages/CleanPage.xaml.cs
+扫描已停止
+=> スキャンを停止しました
+
+# Pages/CleanPage.xaml.cs
+发现 {0} 可清理文件
+=> 削除できるファイルが {0} あります
+
+# Pages/CleanPage.xaml.cs
+扫描完成 电脑很干净
+=> スキャン完了 PC はきれいです
+
+# Pages/CleanPage.xaml.cs
+已勾选 {0} 个文件。到目前为止没有删除任何东西，点“立即清理”后还会再确认一次。
+=> {0} 個のファイルを選択しました。まだ何も削除していません。「今すぐ削除」を押すと、もう一度確認します。
+
+# Pages/CleanPage.xaml.cs
+没有找到可清理的文件
+=> 削除できるファイルが見つかりませんでした
+
+# Pages/CleanPage.xaml.cs
+清理清单.txt
+=> 削除リスト.txt
+
+# Pages/CleanPage.xaml.cs
+文本文件|*.txt
+=> テキストファイル|*.txt
+
+# Pages/CleanPage.xaml.cs
+状态\t字节数\t路径
+=> 状態\tバイト数\tパス
+
+# Pages/CleanPage.xaml.cs
+将删除
+=> 削除予定
+
+# Pages/CleanPage.xaml.cs
+保留
+=> 保持
+
+# Pages/CleanPage.xaml.cs
+清单已导出到 {0}
+=> リストを {0} にエクスポートしました
+
+# Pages/CleanPage.xaml.cs
+没有勾选任何有文件的项目。
+=> ファイルのある項目が選択されていません。
+
+# Pages/CleanPage.xaml.cs, Pages/HomePage.xaml.cs
+· {0}：{1} 个文件（{2}）
+=> · {0}：{1} 個のファイル（{2}）
+
+# Pages/CleanPage.xaml.cs, Pages/HomePage.xaml.cs, ResidueWindow.xaml.cs
+确认清理
+=> 削除の確認
+
+# Pages/CleanPage.xaml.cs
+将永久删除 {0} 个文件，共 {1}：\n\n{2}\n\n正在使用的文件会自动跳过。
+=> {0} 個のファイル（合計 {1}）を完全に削除します：\n\n{2}\n\n使用中のファイルは自動的にスキップされます。
+
+# Pages/CleanPage.xaml.cs, Pages/HomePage.xaml.cs
+已删除 {0} 个文件，释放 {1}。
+=> {0} 個のファイルを削除し、{1} を解放しました。
+
+# Pages/CleanPage.xaml.cs
+\n跳过 {0} 个（多为正在使用或无权限），详情见操作日志。
+=> \n{0} 個をスキップしました（主に使用中または権限なし）。詳細は操作ログをご覧ください。
+
+# Pages/CleanPage.xaml.cs
+清理完成 释放了 {0}
+=> 削除完了 {0} を解放しました
+
+# Pages/CleanPage.xaml.cs, Pages/HomePage.xaml.cs, ResidueWindow.xaml.cs
+清理完成
+=> 削除完了
+
+# Pages/CleanPage.xaml.cs
+回收站已经是空的。
+=> ごみ箱はすでに空です。
+
+# Pages/CleanPage.xaml.cs, Pages/CleanPage.xaml
+清空回收站
+=> ごみ箱を空にする
+
+# Pages/CleanPage.xaml.cs
+回收站里的文件清空后无法恢复。确定清空吗？
+=> ごみ箱のファイルは空にすると復元できません。空にしますか？
+
+# Pages/CleanPage.xaml.cs
+清空
+=> 空にする
+
+# Pages/CleanPage.xaml.cs
+正在清空回收站…
+=> ごみ箱を空にしています…
+
+# Pages/CleanPage.xaml.cs
+没有完全清空，可能有文件正在使用。
+=> 完全には空にできませんでした。使用中のファイルがある可能性があります。
+
+# Pages/DiskPage.xaml.cs
+目录不存在
+=> フォルダーが存在しません
+
+# Pages/DiskPage.xaml.cs
+{0} 共 {1}
+=> {0} 合計 {1}
+
+# Pages/DiskPage.xaml.cs
+（已停止，结果不完整）
+=> （停止しました。結果は不完全です）
+
+# Pages/DiskPage.xaml.cs
+（没有权限读取的目录不计入）
+=> （読み取り権限のないフォルダーは含みません）
+
+# Pages/HomePage.xaml.cs
+正在体检…
+=> 診断中…
+
+# Pages/HomePage.xaml.cs
+只读取信息，不会修改任何东西。
+=> 情報を読み取るだけで、何も変更しません。
+
+# Pages/HomePage.xaml.cs
+重新体检
+=> 再診断
+
+# Pages/HomePage.xaml.cs
+分
+=> 点
+
+# Pages/HomePage.xaml.cs
+电脑状态很好，继续保持！
+=> PC の状態はとても良好です。この調子で！
+
+# Pages/HomePage.xaml.cs
+电脑状态良好 有 {0} 项可以优化
+=> PC の状態は良好 {0} 項目を最適化できます
+
+# Pages/HomePage.xaml.cs
+发现 {0} 项问题 建议处理
+=> {0} 件の問題が見つかりました 対処をお勧めします
+
+# Pages/HomePage.xaml.cs
+可清理垃圾 {0}，清理前会再次确认。
+=> 削除できるジャンク {0}。削除前にもう一度確認します。
+
+# Pages/HomePage.xaml.cs
+体检完成
+=> 診断完了
+
+# Pages/HomePage.xaml.cs
+体检完成：{0} 分
+=> 診断完了：{0} 点
+
+# Pages/HomePage.xaml.cs
+将永久删除以下 {0} 个文件，共 {1}：\n\n
+=> 次の {0} 個のファイル（合計 {1}）を完全に削除します：\n\n
+
+# Pages/HomePage.xaml.cs
+\n\n想逐个查看文件，可以到“垃圾清理”页扫描后点“查看明细”。正在使用的文件会自动跳过。
+=> \n\nファイルを個別に確認するには、「ジャンク削除」ページでスキャンしてから「明細を表示」を押してください。使用中のファイルは自動的にスキップされます。
+
+# Pages/HomePage.xaml.cs
+\n跳过 {0} 个（多为正在使用），详情见操作日志。
+=> \n{0} 個をスキップしました（主に使用中）。詳細は操作ログをご覧ください。
+
+# Pages/MemoryPage.xaml.cs
+正在读取正在运行的软件…
+=> 実行中のアプリを読み取り中…
+
+# Pages/MemoryPage.xaml.cs
+已用 {0} · 可用 {1} · 共 {2}
+=> 使用 {0} · 空き {1} · 合計 {2}
+
+# Pages/MemoryPage.xaml.cs
+没有其他软件在运行
+=> ほかに実行中のアプリはありません
+
+# Pages/MemoryPage.xaml.cs
+{0} 个软件正在运行 共占用约 {1}
+=> {0} 個のアプリが実行中 合計約 {1} を使用
+
+# Pages/MemoryPage.xaml.cs
+只看后台运行的（{0}）
+=> バックグラウンドのみ表示（{0}）
+
+# Pages/MemoryPage.xaml.cs
+勾选后可以一起结束
+=> 選択するとまとめて終了できます
+
+# Pages/MemoryPage.xaml.cs
+已勾选 {0} 个 · 约 {1}
+=> {0} 個を選択 · 約 {1}
+
+# Pages/MemoryPage.xaml.cs
+结束所选（{0}）
+=> 選択を終了（{0}）
+
+# Pages/MemoryPage.xaml.cs, Pages/MemoryPage.xaml
+结束所选
+=> 選択を終了
+
+# Pages/MemoryPage.xaml.cs
+· {0}（约 {1}）
+=> · {0}（約 {1}）
+
+# Pages/MemoryPage.xaml.cs, Pages/Tools/DedupTool.xaml.cs
+\n……共 {0} 个
+=> \n……合計 {0} 個
+
+# Pages/MemoryPage.xaml.cs
+结束软件
+=> アプリの終了
+
+# Pages/MemoryPage.xaml.cs
+将结束：\n\n{0}\n\n
+=> 次を終了します：\n\n{0}\n\n
+
+# Pages/MemoryPage.xaml.cs
+有窗口的软件会先被要求正常关闭（和点右上角 × 一样）；3 秒内没退出的会被强制结束，没保存的内容会丢失。
+=> ウィンドウのあるアプリには、まず通常の終了を要求します（右上の × を押すのと同じ）。3 秒以内に終了しない場合は強制終了し、保存していない内容は失われます。
+
+# Pages/MemoryPage.xaml.cs
+\n\n其中有开机自启的软件，下次开机还会运行；不想让它运行可以点“关闭自启”。
+=> \n\n自動起動するアプリは、次回起動時にも実行されます。実行させたくない場合は「自動起動オフ」を押してください。
+
+# Pages/MemoryPage.xaml.cs, Pages/MemoryPage.xaml
+结束
+=> 終了
+
+# Pages/MemoryPage.xaml.cs
+正在结束…
+=> 終了中…
+
+# Pages/MemoryPage.xaml.cs
+部分进程没能结束
+=> 一部のプロセスを終了できませんでした
+
+# Pages/MemoryPage.xaml.cs
+已结束
+=> 終了しました
+
+# Pages/MemoryPage.xaml.cs
+已结束 {0} 个软件
+=> {0} 個のアプリを終了しました
+
+# Pages/MemoryPage.xaml.cs
+，可用内存多了约 {0}
+=> 、空きメモリが約 {0} 増えました
+
+# Pages/MemoryPage.xaml.cs
+（其中 {0} 个进程是强制结束的）
+=> （うち {0} 個のプロセスは強制終了）
+
+# Pages/MemoryPage.xaml.cs
+部分没有结束
+=> 一部を終了できませんでした
+
+# Pages/MemoryPage.xaml.cs
+\n\n以管理员身份运行的软件需要本工具也以管理员身份运行才能结束，请点底部的“以管理员身份重新打开”。
+=> \n\n管理者として実行中のアプリを終了するには、このツールも管理者として実行する必要があります。下部の「管理者として再起動」を押してください。
+
+# Pages/MemoryPage.xaml.cs
+已关闭“{0}”的开机自启，下次开机生效；随时可以在“启动加速”里打开。
+=> 「{0}」の自動起動をオフにしました。次回起動時から有効です。「スタートアップ」でいつでもオンに戻せます。
+
+# Pages/MemoryPage.xaml.cs, Pages/StartupPage.xaml.cs, Pages/Tools/MenuTool.xaml.cs, Pages/Tools/NetTool.xaml.cs, Pages/UninstallPage.xaml.cs
+权限不足
+=> 権限が不足しています
+
+# Pages/MemoryPage.xaml.cs, Pages/StartupPage.xaml.cs
+“{0}”是所有用户共用的启动项，需要管理员权限才能修改。\n\n请点底部的“以管理员身份重新打开”。
+=> 「{0}」はすべてのユーザー共通のスタートアップ項目のため、変更には管理者権限が必要です。\n\n下部の「管理者として再起動」を押してください。
+
+# Pages/MemoryPage.xaml.cs, Pages/StartupPage.xaml.cs, Pages/Tools/MenuTool.xaml.cs, Pages/Tools/NetTool.xaml.cs
+没有改成功
+=> 変更できませんでした
+
+# Pages/MorePage.xaml.cs
+请先打开“文件粉碎”或“病毒防护”，再把文件拖进来。
+=> 先に「ファイル完全削除」または「ウイルス対策」を開いてから、ファイルをドロップしてください。
+
+# Pages/StartupPage.xaml.cs
+共 {0} 个启动项 {1} 个已启用
+=> スタートアップ項目 {0} 個 うち {1} 個が有効
+
+# Pages/StartupPage.xaml.cs
+ {0} 个已失效
+=>  {0} 個が無効
+
+# Pages/StartupPage.xaml.cs
+清理失效项（{0}）
+=> 無効な項目を削除（{0}）
+
+# Pages/StartupPage.xaml.cs
+删除失效启动项
+=> 無効なスタートアップ項目の削除
+
+# Pages/StartupPage.xaml.cs
+以下启动项指向的程序已经不存在，开机时只会白白报错或什么也不做：\n\n{0}\n\n
+=> 次のスタートアップ項目のプログラムは存在しないため、起動時にエラーが出るか何もしません：\n\n{0}\n\n
+
+# Pages/StartupPage.xaml.cs
+注册表里的项会先备份成 .reg 文件（双击即可恢复），启动文件夹里的快捷方式会移到回收站。
+=> レジストリの項目は先に .reg ファイルにバックアップされ（ダブルクリックで復元可能）、スタートアップフォルダーのショートカットはごみ箱に移動します。
+
+# Pages/StartupPage.xaml.cs
+删除
+=> 削除
+
+# Pages/StartupPage.xaml.cs
+{0}：需要管理员权限
+=> {0}：管理者権限が必要です
+
+# Pages/StartupPage.xaml.cs
+部分未删除
+=> 一部を削除できませんでした
+
+# Pages/StartupPage.xaml.cs
+\n\n需要管理员权限的，请点底部的“以管理员身份重新打开”。
+=> \n\n管理者権限が必要なものは、下部の「管理者として再起動」を押してください。
+
+# Pages/StartupPage.xaml.cs
+已删除 {0} 个失效启动项，备份在：{1}
+=> {0} 個の無効なスタートアップ項目を削除しました。バックアップ：{1}
+
+# Pages/StartupPage.xaml.cs
+已{0}“{1}”，重启后生效。
+=> 「{1}」を{0}しました。再起動後に反映されます。
+
+# Pages/StartupPage.xaml.cs
+启用
+=> 有効に
+
+# Pages/StartupPage.xaml.cs
+禁用
+=> 無効に
+
+# Pages/StartupPage.xaml.cs
+共 {0} 个启动项 
+=> スタートアップ項目 {0} 個 
+
+# Pages/StartupPage.xaml.cs
+{0} 个已启用
+=> {0} 個が有効
+
+# Pages/StartupPage.xaml.cs
+找不到文件
+=> ファイルが見つかりません
+
+# Pages/StartupPage.xaml.cs
+启动命令指向的文件不存在，可能程序已被卸载：\n\n{0}
+=> 起動コマンドのファイルが存在しません。プログラムがアンインストールされた可能性があります：\n\n{0}
+
+# Pages/Tools/DedupTool.xaml.cs
+选择要查找重复文件的文件夹
+=> 重複ファイルを検索するフォルダーを選択
+
+# Pages/Tools/DedupTool.xaml.cs
+还没有选文件夹
+=> フォルダーが選択されていません
+
+# Pages/Tools/DedupTool.xaml.cs
+请先点“添加文件夹”，选择要查找的位置。
+=> 先に「フォルダーを追加」を押して、検索する場所を選択してください。
+
+# Pages/Tools/DedupTool.xaml.cs
+{0}：{1} / {2}
+=> {0}：{1} / {2}
+
+# Pages/Tools/DedupTool.xaml.cs
+{0}：已找到 {1} 个文件
+=> {0}：{1} 個のファイルが見つかりました
+
+# Pages/Tools/DedupTool.xaml.cs
+已停止。
+=> 停止しました。
+
+# Pages/Tools/DedupTool.xaml.cs
+没有找到重复文件
+=> 重複ファイルは見つかりませんでした
+
+# Pages/Tools/DedupTool.xaml.cs
+找到 {0} 组重复文件 可省出 {1}
+=> 重複ファイル {0} グループ {1} を節約できます
+
+# Pages/Tools/DedupTool.xaml.cs
+已勾选 {0} 个文件 · 共 {1}
+=> {0} 個のファイルを選択 · 合計 {1}
+
+# Pages/Tools/DedupTool.xaml.cs
+。注意：有 {0} 组全部勾选了，这些组会整组跳过，至少要留一个。
+=> 。注意：{0} グループですべてのファイルが選択されています。これらのグループは丸ごとスキップされます。1 つ以上残してください。
+
+# Pages/Tools/DedupTool.xaml.cs
+每组至少留一个
+=> 各グループで 1 つは残してください
+
+# Pages/Tools/DedupTool.xaml.cs
+有 {0} 组的文件全部勾选了，比如：\n{1}\n\n每组请至少留一个不勾选，否则这份内容就一个都不剩了。
+=> {0} グループですべてのファイルが選択されています。例：\n{1}\n\n各グループで 1 つ以上は選択を外してください。外さないと、その内容が 1 つも残りません。
+
+# Pages/Tools/DedupTool.xaml.cs
+删除重复文件
+=> 重複ファイルの削除
+
+# Pages/Tools/DedupTool.xaml.cs
+将把以下文件移到回收站（共 {0}）：\n\n{1}\n\n
+=> 次のファイルをごみ箱に移動します（合計 {0}）：\n\n{1}\n\n
+
+# Pages/Tools/DedupTool.xaml.cs
+每组至少保留一个未勾选的文件。删除前会重新计算 MD5，扫描后被改动过的文件会跳过。
+=> 各グループで選択していないファイルが 1 つ以上残ります。削除前に MD5 を再計算し、スキャン後に変更されたファイルはスキップします。
+
+# Pages/Tools/DedupTool.xaml.cs
+移到回收站
+=> ごみ箱へ移動
+
+# Pages/Tools/DedupTool.xaml.cs
+已把 {0} 个文件移到回收站，省出 {1}。
+=> {0} 個のファイルをごみ箱に移動し、{1} を節約しました。
+
+# Pages/Tools/DedupTool.xaml.cs
+部分文件没有删除
+=> 一部のファイルを削除できませんでした
+
+# Pages/Tools/DedupTool.xaml.cs
+\n\n有 {0} 个没有删除：\n
+=> \n\n{0} 個を削除できませんでした：\n
+
+# Pages/Tools/DefenderTool.xaml.cs, Pages/Tools/DefenderTool.xaml
+没有查杀记录，Defender 没有发现过威胁。
+=> 検出履歴はありません。Defender は脅威を検出していません。
+
+# Pages/Tools/DefenderTool.xaml.cs
+读取不到 Defender 的查杀记录。
+=> Defender の検出履歴を読み取れません。
+
+# Pages/Tools/DefenderTool.xaml.cs
+共 {0} 条
+=> 合計 {0} 件
+
+# Pages/Tools/DefenderTool.xaml.cs
+，其中 {0} 条没有处理完，请到 Windows 安全中心查看。
+=> 、うち {0} 件が未処理です。Windows セキュリティで確認してください。
+
+# Pages/Tools/DefenderTool.xaml.cs
+，都已处理。
+=> 、すべて処理済みです。
+
+# Pages/Tools/DefenderTool.xaml.cs
+病毒库 {0:yyyy-MM-dd} 更新
+=> ウイルス定義 {0:yyyy-MM-dd} 更新
+
+# Pages/Tools/DefenderTool.xaml.cs
+（已经 {0} 天没更新了）
+=> （{0} 日間更新されていません）
+
+# Pages/Tools/DefenderTool.xaml.cs
+病毒库更新时间未知
+=> ウイルス定義の更新日時は不明です
+
+# Pages/Tools/DefenderTool.xaml.cs
+上次扫描 {0:yyyy-MM-dd HH:mm}
+=> 前回のスキャン {0:yyyy-MM-dd HH:mm}
+
+# Pages/Tools/DefenderTool.xaml.cs
+还没有扫描过
+=> まだスキャンしていません
+
+# Pages/Tools/DefenderTool.xaml.cs
+已安装的杀毒软件：{0}。
+=> インストール済みのウイルス対策ソフト：{0}。
+
+# Pages/Tools/DefenderTool.xaml.cs
+防护由 {0} 负责
+=> {0} が保護しています
+
+# Pages/Tools/DefenderTool.xaml.cs
+没有读取到 Microsoft Defender
+=> Microsoft Defender を読み取れません
+
+# Pages/Tools/DefenderTool.xaml.cs
+Defender 已被它接管，这里不能用 Defender 扫描，请用它自己的扫描功能。
+=> Defender はほかのウイルス対策ソフトに置き換えられているため、ここでは Defender でスキャンできません。そのソフト自身のスキャン機能を使ってください。
+
+# Pages/Tools/DefenderTool.xaml.cs
+Defender 可能被关闭或被删除，电脑目前可能没有任何杀毒保护。请打开 Windows 安全中心检查。
+=> Defender がオフにされたか削除された可能性があり、現在 PC はウイルス対策で保護されていない可能性があります。Windows セキュリティを開いて確認してください。
+
+# Pages/Tools/DefenderTool.xaml.cs
+Defender 的病毒防护没有开启
+=> Defender のウイルス対策がオンになっていません
+
+# Pages/Tools/DefenderTool.xaml.cs
+Defender 处于备用状态，仍可用它手动扫描做第二意见。
+=> Defender は待機状態ですが、手動スキャンでセカンドオピニオンとして使えます。
+
+# Pages/Tools/DefenderTool.xaml.cs
+请到 Windows 安全中心打开“实时保护”。
+=> Windows セキュリティで「リアルタイム保護」をオンにしてください。
+
+# Pages/Tools/DefenderTool.xaml.cs
+ {0}，{1}。
+=>  {0}、{1}。
+
+# Pages/Tools/DefenderTool.xaml.cs
+实时保护已关闭
+=> リアルタイム保護がオフです
+
+# Pages/Tools/DefenderTool.xaml.cs
+运行和下载的文件不会被自动检查。请到 Windows 安全中心打开“实时保护”。{0}，{1}。
+=> 実行・ダウンロードしたファイルは自動で検査されません。Windows セキュリティで「リアルタイム保護」をオンにしてください。{0}、{1}。
+
+# Pages/Tools/DefenderTool.xaml.cs
+实时保护已开启 但病毒库有点旧
+=> リアルタイム保護はオン ウイルス定義が少し古くなっています
+
+# Pages/Tools/DefenderTool.xaml.cs
+{0}，建议点“更新病毒库”。{1}。
+=> {0}。「ウイルス定義を更新」を押すことをお勧めします。{1}。
+
+# Pages/Tools/DefenderTool.xaml.cs
+实时保护已开启
+=> リアルタイム保護はオンです
+
+# Pages/Tools/DefenderTool.xaml.cs
+{0}，{1}。
+=> {0}、{1}。
+
+# Pages/Tools/DefenderTool.xaml.cs
+已开启防篡改保护，病毒无法偷偷关掉 Defender。
+=> 改ざん防止がオンのため、ウイルスが勝手に Defender をオフにすることはできません。
+
+# Pages/Tools/DefenderTool.xaml.cs
+正在快速扫描
+=> クイックスキャン中
+
+# Pages/Tools/DefenderTool.xaml.cs, Pages/Tools/DefenderTool.xaml
+全盘扫描
+=> フルスキャン
+
+# Pages/Tools/DefenderTool.xaml.cs
+全盘扫描会检查所有磁盘上的每个文件，通常要一到几个小时，期间电脑会变慢。\n\n平时用快速扫描就够了；怀疑中毒时再做全盘扫描。
+=> フルスキャンはすべてのドライブのすべてのファイルを検査するため、通常 1 時間から数時間かかり、その間 PC が遅くなります。\n\n普段はクイックスキャンで十分です。感染が疑われるときにフルスキャンを行ってください。
+
+# Pages/Tools/DefenderTool.xaml.cs
+开始全盘扫描
+=> フルスキャンを開始
+
+# Pages/Tools/DefenderTool.xaml.cs
+正在全盘扫描
+=> フルスキャン中
+
+# Pages/Tools/DefenderTool.xaml.cs
+选择要扫描的文件
+=> スキャンするファイルを選択
+
+# Pages/Tools/DefenderTool.xaml.cs
+正在扫描
+=> スキャン中
+
+# Pages/Tools/DefenderTool.xaml.cs
+选择要扫描的文件夹（包括里面的所有文件）
+=> スキャンするフォルダーを選択（中のすべてのファイルを含む）
+
+# Pages/Tools/DefenderTool.xaml.cs
+正在扫描，请等这次扫描结束后再拖。
+=> スキャン中です。このスキャンが終わってからドロップしてください。
+
+# Pages/Tools/DefenderTool.xaml.cs
+现在不能用 Defender 扫描，原因见上方的防护状态。
+=> 現在 Defender でスキャンできません。理由は上の保護状態をご覧ください。
+
+# Pages/Tools/DefenderTool.xaml.cs
+正在扫描（{0}/{1}）
+=> スキャン中（{0}/{1}）
+
+# Pages/Tools/DefenderTool.xaml.cs
+：
+=> ：
+
+# Pages/Tools/DefenderTool.xaml.cs
+已用时 {0:hh\:mm\:ss}
+=> 経過時間 {0:hh\:mm\:ss}
+
+# Pages/Tools/DefenderTool.xaml.cs
+　
+=> 　
+
+# Pages/Tools/DefenderTool.xaml.cs
+“{0}”
+=> 「{0}」
+
+# Pages/Tools/DefenderTool.xaml.cs, Pages/Tools/DefenderTool.xaml
+快速扫描
+=> クイックスキャン
+
+# Pages/Tools/DefenderTool.xaml.cs
+{0}发现了威胁，Defender 已按默认设置处理（通常是隔离）。详情见下方查杀记录；如果是误报，可以在 Windows 安全中心里恢复。
+=> {0}で脅威が見つかりました。Defender が既定の設定で処理しました（通常は検疫）。詳細は下の検出履歴をご覧ください。誤検出の場合は Windows セキュリティで復元できます。
+
+# Pages/Tools/DefenderTool.xaml.cs
+{0}完成，没有发现威胁。用时 {1:hh\:mm\:ss}。
+=> {0}が完了しました。脅威は見つかりませんでした。所要時間 {1:hh\:mm\:ss}。
+
+# Pages/Tools/DefenderTool.xaml.cs
+扫描没有正常完成（返回码 {0}）。
+=> スキャンが正常に完了しませんでした（戻り値 {0}）。
+
+# Pages/Tools/DefenderTool.xaml.cs
+扫描已停止。
+=> スキャンを停止しました。
+
+# Pages/Tools/DefenderTool.xaml.cs
+扫描出错：
+=> スキャンエラー：
+
+# Pages/Tools/DefenderTool.xaml.cs
+正在更新病毒库（由 Defender 联网下载）
+=> ウイルス定義を更新中（Defender がダウンロード）
+
+# Pages/Tools/DefenderTool.xaml.cs
+病毒库已是最新。
+=> ウイルス定義は最新です。
+
+# Pages/Tools/DefenderTool.xaml.cs
+更新没有成功（返回码 {0}），可能是没联网。
+=> 更新に失敗しました（戻り値 {0}）。ネットに接続されていない可能性があります。
+
+# Pages/Tools/DefenderTool.xaml.cs
+更新出错：
+=> 更新エラー：
+
+# Pages/Tools/MenuTool.xaml.cs
+正在读取右键菜单…
+=> 右クリックメニューを読み取り中…
+
+# Pages/Tools/MenuTool.xaml.cs
+软件添加了 {0} 个右键菜单项
+=> アプリが追加した右クリックメニュー項目：{0} 個
+
+# Pages/Tools/MenuTool.xaml.cs
+已隐藏 {0} 个
+=> {0} 個を非表示中
+
+# Pages/Tools/MenuTool.xaml.cs
+显示 Windows 自带的（{0}）
+=> Windows 標準の項目を表示（{0}）
+
+# Pages/Tools/MenuTool.xaml.cs
+隐藏 Windows 自带的菜单项
+=> Windows 標準のメニュー項目を非表示
+
+# Pages/Tools/MenuTool.xaml.cs
+“{0}”是 Windows 自带的。隐藏后右键菜单里就看不到它了，随时可以在这里重新打开。
+=> 「{0}」は Windows 標準の項目です。非表示にすると右クリックメニューに表示されなくなりますが、ここでいつでも再表示できます。
+
+# Pages/Tools/MenuTool.xaml.cs
+隐藏
+=> 非表示
+
+# Pages/Tools/MenuTool.xaml.cs
+已恢复
+=> 元に戻しました
+
+# Pages/Tools/MenuTool.xaml.cs
+右键菜单项“{0}”
+=> 右クリックメニュー項目「{0}」
+
+# Pages/Tools/MenuTool.xaml.cs
+，重新打开资源管理器窗口后生效。
+=> 。エクスプローラーのウィンドウを開き直すと反映されます。
+
+# Pages/Tools/MenuTool.xaml.cs
+“{0}”是为所有用户注册的，修改需要管理员权限。\n\n请点底部的“以管理员身份重新打开”。
+=> 「{0}」はすべてのユーザー向けに登録されているため、変更には管理者権限が必要です。\n\n下部の「管理者として再起動」を押してください。
+
+# Pages/Tools/NetTool.xaml.cs
+正在读取联网情况…
+=> ネット接続の状況を読み取り中…
+
+# Pages/Tools/NetTool.xaml.cs
+Windows 防火墙在当前网络下是关着的，“禁止联网”的规则不会起作用。如果装了别的防火墙软件，请在那个软件里设置。
+=> 現在のネットワークでは Windows ファイアウォールがオフのため、「ネット接続を禁止」のルールは機能しません。ほかのファイアウォールソフトを使っている場合は、そのソフトで設定してください。
+
+# Pages/Tools/NetTool.xaml.cs
+读不到 Windows 防火墙的状态，“禁止联网”可能用不了。
+=> Windows ファイアウォールの状態を読み取れません。「ネット接続を禁止」が使えない可能性があります。
+
+# Pages/Tools/NetTool.xaml.cs
+现在是普通权限：可以查看，但禁止联网和限速需要点底部的“以管理员身份重新打开”。
+=> 現在は通常の権限です。表示はできますが、ネット接続の禁止や速度制限には下部の「管理者として再起動」が必要です。
+
+# Pages/Tools/NetTool.xaml.cs
+{0} 个软件正在联网
+=> {0} 個のアプリがネットに接続中
+
+# Pages/Tools/NetTool.xaml.cs
+共 {0} 个连接
+=> 接続 合計 {0} 個
+
+# Pages/Tools/NetTool.xaml.cs
+ · 已禁止 {0} 个软件联网
+=>  · {0} 個のアプリのネット接続を禁止中
+
+# Pages/Tools/NetTool.xaml.cs
+显示系统进程（{0}）
+=> システムプロセスを表示（{0}）
+
+# Pages/Tools/NetTool.xaml.cs, Pages/Tools/NetTool.xaml
+禁止联网
+=> ネット接続を禁止
+
+# Pages/Tools/NetTool.xaml.cs
+将在 Windows 防火墙里加两条规则，阻止“{0}”收发任何网络数据：\n{1}\n\n
+=> Windows ファイアウォールに 2 つのルールを追加し、「{0}」のすべての通信をブロックします：\n{1}\n\n
+
+# Pages/Tools/NetTool.xaml.cs
+已经建立的连接可能要等软件重连时才会断开。随时可以点“允许联网”恢复，规则名以“
+=> 確立済みの接続は、アプリが再接続するまで切断されない場合があります。「ネット接続を許可」でいつでも元に戻せます。ルール名は「
+
+# Pages/Tools/NetTool.xaml.cs
+”开头。
+=> 」で始まります。
+
+# Pages/Tools/NetTool.xaml.cs
+已禁止“{0}”联网
+=> 「{0}」のネット接続を禁止しました
+
+# Pages/Tools/NetTool.xaml.cs
+已允许“{0}”联网
+=> 「{0}」のネット接続を許可しました
+
+# Pages/Tools/NetTool.xaml.cs, Pages/Tools/NetTool.xaml
+上传限速
+=> アップロード制限
+
+# Pages/Tools/NetTool.xaml.cs
+限制“{0}”的上传速度，单位 KB/s。填 0 取消限速。\n\n
+=> 「{0}」のアップロード速度を制限します（単位 KB/s）。0 を入力すると制限を解除します。\n\n
+
+# Pages/Tools/NetTool.xaml.cs
+Windows 自带的办法只能限制上传；下载限速需要安装网络驱动，本工具不装驱动，所以做不到。
+=> Windows 標準の方法ではアップロードのみ制限できます。ダウンロードの制限にはネットワークドライバーが必要ですが、このツールはドライバーをインストールしないため対応できません。
+
+# Pages/Tools/NetTool.xaml.cs
+输入不对
+=> 入力が正しくありません
+
+# Pages/Tools/NetTool.xaml.cs
+请输入一个整数，比如 500 表示每秒最多上传 500 KB。
+=> 整数を入力してください。例：500 は毎秒最大 500 KB のアップロードを意味します。
+
+# Pages/Tools/NetTool.xaml.cs
+已把“{0}”的上传限制为 {1} KB/s
+=> 「{0}」のアップロードを {1} KB/s に制限しました
+
+# Pages/Tools/NetTool.xaml.cs
+已取消“{0}”的上传限速
+=> 「{0}」のアップロード制限を解除しました
+
+# Pages/Tools/NetTool.xaml.cs
+没有设置成功
+=> 設定できませんでした
+
+# Pages/Tools/NetTool.xaml.cs
+\n\n需要管理员权限，请点底部的“以管理员身份重新打开”。
+=> \n\n管理者権限が必要です。下部の「管理者として再起動」を押してください。
+
+# Pages/Tools/NetTool.xaml.cs
+修改防火墙规则需要管理员权限。\n\n请点底部的“以管理员身份重新打开”。
+=> ファイアウォールのルールを変更するには管理者権限が必要です。\n\n下部の「管理者として再起動」を押してください。
+
+# Pages/Tools/ShredTool.xaml.cs
+{0} 个文件 · {1}
+=> {0} 個のファイル · {1}
+
+# Pages/Tools/ShredTool.xaml.cs
+选择要粉碎的文件
+=> 完全削除するファイルを選択
+
+# Pages/Tools/ShredTool.xaml.cs
+选择要粉碎的文件夹（里面的所有文件都会被粉碎）
+=> 完全削除するフォルダーを選択（中のすべてのファイルが完全削除されます）
+
+# Pages/Tools/ShredTool.xaml.cs
+有些不能粉碎
+=> 一部は完全削除できません
+
+# Pages/Tools/ShredTool.xaml.cs, Pages/Tools/ShredTool.xaml
+把文件或文件夹拖到这里，或点右边的按钮添加。
+=> ファイルやフォルダーをここにドラッグするか、右のボタンで追加してください。
+
+# Pages/Tools/ShredTool.xaml.cs
+共 {0} 个文件 · {1}
+=> 合計 {0} 個のファイル · {1}
+
+# Pages/Tools/ShredTool.xaml.cs, ResidueWindow.xaml.cs
+\n……共 {0} 项
+=> \n……合計 {0} 項目
+
+# Pages/Tools/ShredTool.xaml.cs
+粉碎文件（无法恢复）
+=> ファイルの完全削除（復元不可）
+
+# Pages/Tools/ShredTool.xaml.cs
+将彻底删除以下 {0} 个文件（{1}），不进回收站，任何工具都找不回来：\n\n{2}
+=> 次の {0} 個のファイル（{1}）を完全に削除します。ごみ箱には入らず、どんなツールでも復元できません：\n\n{2}
+
+# Pages/Tools/ShredTool.xaml.cs
+确定粉碎
+=> 完全削除する
+
+# Pages/Tools/ShredTool.xaml.cs
+正在粉碎：{0}（{1} / {2}）
+=> 完全削除中：{0}（{1} / {2}）
+
+# Pages/Tools/ShredTool.xaml.cs
+已停止
+=> 停止しました
+
+# Pages/Tools/ShredTool.xaml.cs
+已经粉碎的文件无法恢复；正在处理的那个文件内容可能已被部分覆盖。列表里剩下的是还没粉碎的。
+=> 完全削除済みのファイルは復元できません。処理中だったファイルは内容が一部上書きされている可能性があります。リストに残っているのはまだ完全削除していないファイルです。
+
+# Pages/Tools/ShredTool.xaml.cs
+已粉碎 {0} 个文件（{1}）。
+=> {0} 個のファイル（{1}）を完全削除しました。
+
+# Pages/Tools/ShredTool.xaml.cs
+部分文件没有粉碎
+=> 一部のファイルを完全削除できませんでした
+
+# Pages/Tools/ShredTool.xaml.cs
+\n\n有 {0} 个没有粉碎：\n
+=> \n\n{0} 個を完全削除できませんでした：\n
+
+# Pages/UninstallPage.xaml.cs
+刚卸载的软件（{0}） 可以再扫描一次残留
+=> アンインストールしたばかりのアプリ（{0}） 残留物をもう一度スキャンできます
+
+# Pages/UninstallPage.xaml.cs
+正在读取已安装的软件…
+=> インストール済みのアプリを読み取り中…
+
+# Pages/UninstallPage.xaml.cs
+共 {0} 个软件
+=> 合計 {0} 個のアプリ
+
+# Pages/UninstallPage.xaml.cs
+ 其中 {0} 条卸载记录已失效
+=>  うち {0} 件のアンインストール情報が無効
+
+# Pages/UninstallPage.xaml.cs
+只看失效记录（{0}）
+=> 無効な記録のみ表示（{0}）
+
+# Pages/UninstallPage.xaml.cs
+卸载软件
+=> アプリのアンインストール
+
+# Pages/UninstallPage.xaml.cs
+将运行“{0}”自带的卸载程序，请在它弹出的窗口里完成卸载。\n\n
+=> 「{0}」付属のアンインストーラーを実行します。表示されたウィンドウでアンインストールを完了してください。\n\n
+
+# Pages/UninstallPage.xaml.cs
+卸载完成后，本工具会查找残留的文件夹、注册表和启动项，并让你逐项确认后再清理。
+=> アンインストール完了後、このツールが残留したフォルダー・レジストリ・スタートアップ項目を検索し、項目ごとに確認してから削除します。
+
+# Pages/UninstallPage.xaml.cs
+开始卸载
+=> アンインストール開始
+
+# Pages/UninstallPage.xaml.cs
+正在运行卸载程序…
+=> アンインストーラーを実行中…
+
+# Pages/UninstallPage.xaml.cs
+已取消
+=> キャンセルしました
+
+# Pages/UninstallPage.xaml.cs
+无法启动卸载程序：
+=> アンインストーラーを起動できません：
+
+# Pages/UninstallPage.xaml.cs
+等待卸载完成…
+=> アンインストールの完了を待っています…
+
+# Pages/UninstallPage.xaml.cs
+卸载程序已关闭，但软件还在。如果还在卸载中，完成后点“刷新”
+=> アンインストーラーは閉じましたが、アプリはまだ残っています。アンインストール中の場合は、完了後に「更新」を押してください
+
+# Pages/UninstallPage.xaml.cs
+删除失效的卸载记录
+=> 無効なアンインストール情報の削除
+
+# Pages/UninstallPage.xaml.cs
+“{0}”的卸载程序已经不存在，这条记录无法再用来卸载。\n\n
+=> 「{0}」のアンインストーラーは存在しないため、この記録ではアンインストールできません。\n\n
+
+# Pages/UninstallPage.xaml.cs
+删除前会把这条注册表记录备份成 .reg 文件，双击即可恢复。删除后还会查找这个软件的其他残留。
+=> 削除前にこのレジストリの記録を .reg ファイルにバックアップします（ダブルクリックで復元可能）。削除後、このアプリのほかの残留物も検索します。
+
+# Pages/UninstallPage.xaml.cs
+删除记录
+=> 記録を削除
+
+# Pages/UninstallPage.xaml.cs
+已删除“{0}”的卸载记录，备份：{1}
+=> 「{0}」のアンインストール情報を削除しました。バックアップ：{1}
+
+# Pages/UninstallPage.xaml.cs
+这条记录属于“所有用户”，需要管理员权限才能删除。\n\n请点底部的“以管理员身份重新打开”。
+=> この記録は「すべてのユーザー」のものなので、削除には管理者権限が必要です。\n\n下部の「管理者として再起動」を押してください。
+
+# Pages/UninstallPage.xaml.cs
+没有删除成功
+=> 削除できませんでした
+
+# ResidueWindow.xaml.cs
+残留清理 - {0}
+=> 残留物の削除 - {0}
+
+# ResidueWindow.xaml.cs
+正在查找“{0}”的残留…
+=> 「{0}」の残留物を検索中…
+
+# ResidueWindow.xaml.cs
+“{0}”没有残留
+=> 「{0}」の残留物はありません
+
+# ResidueWindow.xaml.cs
+发现“{0}”的 {1} 处残留
+=> 「{0}」の残留物が {1} か所見つかりました
+
+# ResidueWindow.xaml.cs
+已勾选 {0} 项
+=> {0} 項目を選択
+
+# ResidueWindow.xaml.cs
+ · 文件共 {0}
+=>  · ファイル合計 {0}
+
+# ResidueWindow.xaml.cs
+确认清理残留
+=> 残留物の削除の確認
+
+# ResidueWindow.xaml.cs
+将清理以下内容：\n\n{0}\n\n文件夹移到回收站，注册表先备份到：\n{1}
+=> 次の内容を削除します：\n\n{0}\n\nフォルダーはごみ箱に移動し、レジストリは先に次の場所へバックアップします：\n{1}
+
+# ResidueWindow.xaml.cs
+已清理 {0} 项。
+=> {0} 項目を削除しました。
+
+# ResidueWindow.xaml.cs
+\n注册表备份在：{0}
+=> \nレジストリのバックアップ：{0}
+
+# ResidueWindow.xaml.cs
+\n\n有 {0} 项没有清理：\n
+=> \n\n{0} 項目を削除できませんでした：\n
+
+# ResidueWindow.xaml.cs
+清理完成（部分未完成）
+=> 削除完了（一部未完了）
+
+# MainWindow.xaml
+透明优化助手
+=> 透明最適化アシスタント
+
+# MainWindow.xaml
+最小化
+=> 最小化
+
+# MainWindow.xaml
+最大化/还原
+=> 最大化/元に戻す
+
+# MainWindow.xaml
+关闭（程序会完全退出）
+=> 閉じる（プログラムは完全に終了します）
+
+# MainWindow.xaml
+电脑体检
+=> PC診断
+
+# MainWindow.xaml
+垃圾清理
+=> ジャンク削除
+
+# MainWindow.xaml
+启动加速
+=> スタートアップ
+
+# MainWindow.xaml, Pages/MemoryPage.xaml
+内存优化
+=> メモリ最適化
+
+# MainWindow.xaml, Pages/UninstallPage.xaml
+彻底卸载
+=> アプリ完全削除
+
+# MainWindow.xaml
+磁盘分析
+=> ディスク分析
+
+# MainWindow.xaml
+系统信息
+=> システム情報
+
+# MainWindow.xaml, Pages/MorePage.xaml
+更多功能
+=> その他の機能
+
+# MainWindow.xaml
+以管理员身份重新打开
+=> 管理者として再起動
+
+# MainWindow.xaml
+操作日志
+=> 操作ログ
+
+# MainWindow.xaml
+关于
+=> バージョン情報
+
+# MainWindow.xaml
+不联网 · 不常驻后台 · 删除前必先预览确认
+=> ネット接続なし · 常駐なし · 削除前に必ずプレビュー確認
+
+# Pages/CleanPage.xaml
+导出完整清单
+=> 完全なリストをエクスポート
+
+# Pages/CleanPage.xaml, Pages/DiskPage.xaml, Pages/Tools/DedupTool.xaml, Pages/Tools/DefenderTool.xaml, Pages/Tools/ShredTool.xaml
+停止
+=> 停止
+
+# Pages/CleanPage.xaml
+开始扫描
+=> スキャン開始
+
+# Pages/CleanPage.xaml
+立即清理
+=> 今すぐ削除
+
+# Pages/CleanPage.xaml
+选择要扫描的项目
+=> スキャンする項目を選択
+
+# Pages/CleanPage.xaml
+只在下面这些固定目录里找文件，扫描不会删除任何东西。
+=> 以下の決まったフォルダーのみでファイルを探します。スキャンでは何も削除しません。
+
+# Pages/CleanPage.xaml
+查看明细
+=> 明細を表示
+
+# Pages/CleanPage.xaml, Pages/StartupPage.xaml
+需管理员
+=> 要管理者
+
+# Pages/CleanPage.xaml
+本机没有
+=> この PC にはなし
+
+# Pages/DiskPage.xaml
+分析这个磁盘
+=> このドライブを分析
+
+# Pages/DiskPage.xaml
+选择文件夹
+=> フォルダーを選択
+
+# Pages/DiskPage.xaml
+上一级
+=> 上へ
+
+# Pages/DiskPage.xaml
+开始分析
+=> 分析開始
+
+# Pages/DiskPage.xaml
+只读分析，不会删除任何东西。双击文件夹进入下一层，双击文件在资源管理器中定位。
+=> 読み取り専用の分析で、何も削除しません。フォルダーをダブルクリックすると下の階層へ、ファイルをダブルクリックするとエクスプローラーに表示します。
+
+# Pages/DiskPage.xaml
+哪个文件夹最大
+=> 大きいフォルダー
+
+# Pages/DiskPage.xaml
+最大的 50 个文件
+=> 最大の 50 ファイル
+
+# Pages/HomePage.xaml
+尚未体检
+=> 未診断
+
+# Pages/HomePage.xaml
+建议立即体检 看看电脑状态如何
+=> 今すぐ診断して PC の状態を確認しましょう
+
+# Pages/HomePage.xaml
+体检只读取信息，不会修改或删除任何东西。
+=> 診断は情報を読み取るだけで、何も変更・削除しません。
+
+# Pages/HomePage.xaml
+立即体检
+=> 今すぐ診断
+
+# Pages/HomePage.xaml
+一键清理垃圾
+=> ワンクリックでジャンク削除
+
+# Pages/HomePage.xaml
+体检会检查这 7 项
+=> 診断では次の 7 項目を確認します
+
+# Pages/HomePage.xaml
+垃圾文件 · 回收站 · 开机启动项 · 软件残留 · 系统盘剩余空间 · 连续运行时间 · 病毒防护
+=> ジャンクファイル · ごみ箱 · スタートアップ項目 · アプリの残留物 · システムドライブの空き容量 · 連続稼働時間 · ウイルス対策
+
+# Pages/InfoPage.xaml, Pages/MemoryPage.xaml, Pages/StartupPage.xaml, Pages/Tools/DefenderTool.xaml, Pages/Tools/MenuTool.xaml, Pages/Tools/NetTool.xaml, Pages/UninstallPage.xaml
+刷新
+=> 更新
+
+# Pages/InfoPage.xaml
+我的电脑
+=> マイ PC
+
+# Pages/InfoPage.xaml
+以下信息全部在本机读取，不会上传到任何地方。
+=> 以下の情報はすべてこの PC 上で読み取っており、どこにも送信しません。
+
+# Pages/MemoryPage.xaml
+下面是你自己运行的软件（系统进程已排除），按占用从高到低排列。“结束”只管这一次；标着“开机自启”的，关掉自启下次开机才不会再出现。
+=> あなたが実行したアプリ（システムプロセスは除外）を、使用量の多い順に表示しています。「終了」は今回のみ有効です。「自動起動」と表示されたものは、自動起動をオフにすると次回起動時に表示されなくなります。
+
+# Pages/MemoryPage.xaml
+只看后台运行的
+=> バックグラウンドのみ表示
+
+# Pages/MemoryPage.xaml
+没有窗口、在后台或托盘里运行的软件
+=> ウィンドウがなく、バックグラウンドやタスクトレイで実行中のアプリ
+
+# Pages/MemoryPage.xaml
+全选当前列表
+=> 表示中の項目をすべて選択
+
+# Pages/MemoryPage.xaml, Pages/UninstallPage.xaml
+没有找到符合条件的软件。
+=> 条件に合うアプリが見つかりませんでした。
+
+# Pages/MemoryPage.xaml
+关闭自启
+=> 自動起動オフ
+
+# Pages/MemoryPage.xaml
+不再开机自动运行（随时可以在“启动加速”里打开）
+=> 起動時に自動実行しないようにします（「スタートアップ」でいつでもオンに戻せます）
+
+# Pages/MemoryPage.xaml
+没有窗口，在后台或托盘里运行。
+=> ウィンドウなし。バックグラウンドまたはタスクトレイで実行中。
+
+# Pages/MemoryPage.xaml
+后台
+=> バックグラウンド
+
+# Pages/MorePage.xaml
+不常用、但用的时候很方便的小工具。
+=> いつも使うわけではないけれど、あると便利な小さなツール。
+
+# Pages/MorePage.xaml
+查看防护状态，用 Windows 自带的 Defender 查杀病毒木马。
+=> 保護状態を確認し、Windows 標準の Defender でウイルスやトロイの木馬を駆除します。
+
+# Pages/MorePage.xaml, Pages/Tools/DedupTool.xaml
+文件去重
+=> 重複ファイル削除
+
+# Pages/MorePage.xaml
+按 MD5 找出内容完全相同的文件，保留一份，其余移到回收站。
+=> MD5 で内容がまったく同じファイルを見つけ、1 つを残して残りをごみ箱に移動します。
+
+# Pages/MorePage.xaml, Pages/Tools/NetTool.xaml
+联网控制
+=> ネット接続管理
+
+# Pages/MorePage.xaml
+看哪些软件正在联网、哪些端口在等别人连进来；可以禁止某个软件联网，或限制它的上传速度。
+=> ネットに接続中のアプリと、ほかの PC からの接続を待っているポートを表示します。アプリのネット接続を禁止したり、アップロード速度を制限したりできます。
+
+# Pages/MorePage.xaml, Pages/Tools/MenuTool.xaml
+右键菜单管理
+=> 右クリックメニュー管理
+
+# Pages/MorePage.xaml
+隐藏软件塞进右键菜单的项目，随时可以恢复。
+=> アプリが右クリックメニューに追加した項目を非表示にします。いつでも元に戻せます。
+
+# Pages/MorePage.xaml, Pages/Tools/ShredTool.xaml
+文件粉碎
+=> ファイル完全削除
+
+# Pages/MorePage.xaml
+覆盖文件内容后再删除，防止被恢复软件找回。
+=> ファイルの内容を上書きしてから削除し、復元ソフトで復元されるのを防ぎます。
+
+# Pages/MorePage.xaml
+‹ 返回更多功能
+=> ‹ その他の機能に戻る
+
+# Pages/StartupPage.xaml
+关闭开关只是禁止开机自动运行，不会删除程序；和任务管理器“启动”页是同一套开关，随时可以打开。重启后生效。标红的是指向程序已不存在的失效项，可以删除（注册表项会先备份）。
+=> スイッチをオフにすると起動時の自動実行を止めるだけで、プログラムは削除しません。タスク マネージャーの「スタートアップ」タブと同じスイッチで、いつでもオンに戻せます。再起動後に反映されます。赤色の項目はプログラムが存在しない無効な項目で、削除できます（レジストリの項目は先にバックアップします）。
+
+# Pages/StartupPage.xaml
+没有找到启动项。
+=> スタートアップ項目が見つかりませんでした。
+
+# Pages/StartupPage.xaml
+开：开机自动运行。关：不自动运行。
+=> オン：起動時に自動実行します。オフ：自動実行しません。
+
+# Pages/StartupPage.xaml, Pages/Tools/DedupTool.xaml
+打开位置
+=> 場所を開く
+
+# Pages/StartupPage.xaml
+删除这一项
+=> この項目を削除
+
+# Pages/StartupPage.xaml
+启动项指向的程序找不到了，通常是软件卸载后留下的。
+=> スタートアップ項目のプログラムが見つかりません。通常はアプリのアンインストール後に残ったものです。
+
+# Pages/StartupPage.xaml
+程序已不存在
+=> プログラムが存在しません
+
+# Pages/Tools/DedupTool.xaml
+删除所选
+=> 選択を削除
+
+# Pages/Tools/DedupTool.xaml
+以 MD5 判断内容是否相同（只对大小相同的文件计算 MD5，大小不同的不可能重复）。每组默认保留最早的那个，删掉的文件进回收站。
+=> MD5 で内容が同じかどうかを判定します（サイズが同じファイルのみ MD5 を計算します。サイズが異なれば重複はあり得ません）。各グループでは既定で最も古いファイルを残し、削除したファイルはごみ箱に入ります。
+
+# Pages/Tools/DedupTool.xaml
+只看
+=> 表示：
+
+# Pages/Tools/DedupTool.xaml
+全部文件
+=> すべてのファイル
+
+# Pages/Tools/DedupTool.xaml, Pages/Tools/ShredTool.xaml
+添加文件夹
+=> フォルダーを追加
+
+# Pages/Tools/DedupTool.xaml
+开始查找
+=> 検索開始
+
+# Pages/Tools/DedupTool.xaml
+先添加要查找的文件夹，可以添加多个。
+=> 検索するフォルダーを追加してください。複数追加できます。
+
+# Pages/Tools/DedupTool.xaml, Pages/Tools/ShredTool.xaml
+移除
+=> 外す
+
+# Pages/Tools/DedupTool.xaml
+勾选 = 删除（移到回收站）
+=> チェック = 削除（ごみ箱へ移動）
+
+# Pages/Tools/DefenderTool.xaml
+几分钟内检查最容易藏病毒木马的地方：正在运行的程序、开机启动项、系统关键位置。
+=> ウイルスやトロイの木馬が潜みやすい場所（実行中のプログラム、スタートアップ項目、システムの重要な場所）を数分で検査します。
+
+# Pages/Tools/DefenderTool.xaml
+用 Windows 自带的 Microsoft Defender 查杀病毒和木马。本工具不自带病毒库，只是把 Defender 的状态、扫描和查杀记录放到一起，方便查看。
+=> Windows 標準の Microsoft Defender でウイルスやトロイの木馬を駆除します。このツールは独自のウイルス定義を持たず、Defender の状態・スキャン・検出履歴をまとめて見やすく表示するだけです。
+
+# Pages/Tools/DefenderTool.xaml
+正在读取防护状态…
+=> 保護状態を読み取り中…
+
+# Pages/Tools/DefenderTool.xaml
+检查所有磁盘上的所有文件，可能要一两个小时，期间电脑会变慢。
+=> すべてのドライブのすべてのファイルを検査します。1～2 時間かかる場合があり、その間 PC が遅くなります。
+
+# Pages/Tools/DefenderTool.xaml
+扫描文件
+=> ファイルをスキャン
+
+# Pages/Tools/DefenderTool.xaml
+扫描文件夹
+=> フォルダーをスキャン
+
+# Pages/Tools/DefenderTool.xaml
+更新病毒库
+=> ウイルス定義を更新
+
+# Pages/Tools/DefenderTool.xaml
+由 Defender 自己联网下载最新病毒库（本工具不联网）
+=> Defender 自身が最新のウイルス定義をダウンロードします（このツールは通信しません）
+
+# Pages/Tools/DefenderTool.xaml
+打开 Windows 安全中心
+=> Windows セキュリティを開く
+
+# Pages/Tools/DefenderTool.xaml
+开关实时防护、恢复被误隔离的文件、添加信任，都在 Windows 安全中心里。
+=> リアルタイム保護のオン/オフ、誤って検疫されたファイルの復元、除外の追加は Windows セキュリティで行います。
+
+# Pages/Tools/DefenderTool.xaml
+也可以直接把可疑的文件或文件夹拖到这里扫描。发现威胁时 Defender 会按它的默认设置处理（通常是隔离），被误隔离的文件可以在 Windows 安全中心里恢复。
+=> 怪しいファイルやフォルダーをここに直接ドラッグしてスキャンすることもできます。脅威が見つかると Defender が既定の設定で処理し（通常は検疫）、誤って検疫されたファイルは Windows セキュリティで復元できます。
+
+# Pages/Tools/DefenderTool.xaml
+Defender 查杀记录
+=> Defender の検出履歴
+
+# Pages/Tools/MenuTool.xaml
+关掉开关只是隐藏，不删除任何东西，随时可以再打开。管理的是经典右键菜单（Win11 里在“显示更多选项”里）。“扩展组件”关掉后要重新打开资源管理器窗口才生效。大多数项目需要管理员权限才能修改。
+=> スイッチをオフにしても非表示になるだけで何も削除せず、いつでもオンに戻せます。対象はクラシック右クリックメニューです（Windows 11 では「その他のオプションを確認」内）。「シェル拡張」はオフにした後、エクスプローラーのウィンドウを開き直すと反映されます。ほとんどの項目は変更に管理者権限が必要です。
+
+# Pages/Tools/MenuTool.xaml
+显示 Windows 自带的
+=> Windows 標準の項目を表示
+
+# Pages/Tools/MenuTool.xaml
+没有找到第三方软件添加的右键菜单项。
+=> サードパーティ製アプリが追加した右クリックメニュー項目は見つかりませんでした。
+
+# Pages/Tools/MenuTool.xaml
+开：在右键菜单里显示。关：隐藏。
+=> オン：右クリックメニューに表示します。オフ：非表示にします。
+
+# Pages/Tools/MenuTool.xaml
+按住 Shift 才显示
+=> Shift を押しながらのときのみ表示
+
+# Pages/Tools/NetTool.xaml
+列表来自系统的连接表（和 netstat 相同），点“刷新”更新。禁止联网用的是 Windows 防火墙规则；限速用的是 Windows 自带的 QoS 策略，只能限制上传。修改需要管理员权限。
+=> 一覧はシステムの接続テーブル（netstat と同じ）から取得しています。「更新」を押すと最新になります。ネット接続の禁止には Windows ファイアウォールのルール、速度制限には Windows 標準の QoS ポリシーを使い、アップロードのみ制限できます。変更には管理者権限が必要です。
+
+# Pages/Tools/NetTool.xaml
+显示系统进程
+=> システムプロセスを表示
+
+# Pages/Tools/NetTool.xaml
+现在没有软件在联网。
+=> 現在、ネットに接続しているアプリはありません。
+
+# Pages/Tools/NetTool.xaml
+允许联网
+=> ネット接続を許可
+
+# Pages/Tools/NetTool.xaml
+已禁止联网
+=> ネット接続禁止中
+
+# Pages/Tools/NetTool.xaml
+系统
+=> システム
+
+# Pages/Tools/ShredTool.xaml
+粉碎
+=> 完全削除
+
+# Pages/Tools/ShredTool.xaml
+先用随机数据把文件内容覆盖掉并写入磁盘，再改成随机文件名删除，恢复软件找不回内容和文件名。粉碎后无法恢复，也不会进回收站。
+=> まずファイルの内容をランダムなデータで上書きしてディスクに書き込み、次にランダムなファイル名に変更してから削除するため、復元ソフトでも内容やファイル名を復元できません。完全削除したファイルは復元できず、ごみ箱にも入りません。
+
+# Pages/Tools/ShredTool.xaml
+注意：固态硬盘（SSD）会把写入挪到别的位置，覆盖不能保证旧数据在硬件上被擦掉；系统还原点、文件历史记录、网盘里的副本也不会被粉碎。系统和软件目录里的文件不允许粉碎。
+=> 注意：SSD は書き込みを別の場所に移すため、上書きしても古いデータがハードウェア上で消去されるとは限りません。また、システムの復元ポイント、ファイル履歴、クラウドストレージ上のコピーは完全削除されません。システムやアプリのフォルダー内のファイルは完全削除できません。
+
+# Pages/Tools/ShredTool.xaml
+覆盖
+=> 上書き
+
+# Pages/Tools/ShredTool.xaml
+1 遍（推荐）
+=> 1 回（推奨）
+
+# Pages/Tools/ShredTool.xaml
+3 遍（更慢）
+=> 3 回（低速）
+
+# Pages/Tools/ShredTool.xaml
+添加文件
+=> ファイルを追加
+
+# Pages/Tools/ShredTool.xaml
+拖到这里
+=> ここにドロップ
+
+# Pages/UninstallPage.xaml
+卸载时运行软件自带的卸载程序；卸载完成后自动查找残留的文件夹、注册表和启动项，清理前可以逐项确认。
+=> アプリ付属のアンインストーラーを実行してアンインストールします。完了後、残留したフォルダー・レジストリ・スタートアップ項目を自動で検索し、削除前に項目ごとに確認できます。
+
+# Pages/UninstallPage.xaml
+只看失效记录
+=> 無効な記録のみ表示
+
+# Pages/UninstallPage.xaml
+按软件名或发行商搜索
+=> アプリ名または発行元で検索
+
+# Pages/UninstallPage.xaml
+全部收起
+=> すべて折りたたむ
+
+# Pages/UninstallPage.xaml
+只是从这里移走，不会做任何清理。
+=> ここから外すだけで、何も削除しません。
+
+# Pages/UninstallPage.xaml
+刚卸载的软件，点名字旁的“扫描残留”可以再查一次。
+=> アンインストールしたばかりのアプリです。名前の横の「残留物をスキャン」でもう一度検索できます。
+
+# Pages/UninstallPage.xaml
+扫描残留
+=> 残留物をスキャン
+
+# Pages/UninstallPage.xaml
+从这里移走
+=> ここから外す
+
+# Pages/UninstallPage.xaml
+卸载
+=> アンインストール
+
+# Pages/UninstallPage.xaml
+删除失效记录
+=> 無効な記録を削除
+
+# Pages/UninstallPage.xaml
+卸载程序已不存在
+=> アンインストーラーが存在しません
+
+# ResidueWindow.xaml
+残留清理
+=> 残留物の削除
+
+# ResidueWindow.xaml
+正在查找残留…
+=> 残留物を検索中…
+
+# ResidueWindow.xaml
+只列出名称完全对得上的位置，被其他软件使用的位置已排除。文件夹会移到回收站，注册表会先备份成 .reg 文件，都可以恢复。
+=> 名前が完全に一致する場所のみを表示し、ほかのアプリが使用している場所は除外しています。フォルダーはごみ箱に移動し、レジストリは先に .reg ファイルにバックアップするため、どちらも復元できます。
+
+# ResidueWindow.xaml
+没有发现残留，卸载得很干净。
+=> 残留物は見つかりませんでした。きれいにアンインストールされています。
+
+# ResidueWindow.xaml
+关闭
+=> 閉じる
+
+# ResidueWindow.xaml
+清理所选
+=> 選択を削除
+
+# MainWindow.xaml.cs
+# MainWindow.xaml.cs
+# MainWindow.xaml.cs
+# MainWindow.xaml.cs
+# MainWindow.xaml.cs
+# MainWindow.xaml.cs
+# Theme.cs / MainWindow.xaml.cs（主题）
+跟随系统
+=> システムに合わせる
+
+亮色
+=> ライト
+
+暗色
+=> ダーク
+
+本工具所在的文件夹不能写入，主题设置只在这次打开时有效。
+=> このツールのフォルダーに書き込めないため、テーマ設定は今回だけ有効です。
+
+# MainWindow.xaml.cs（设置菜单）
+设置
+=> 設定
+
+主题
+=> テーマ
+
+语言
+=> 言語
+
+本工具所在的文件夹不能写入，语言设置只在这次打开时有效。
+=> このツールのフォルダーに書き込めないため、言語設定は今回だけ有効です。
+
+# 标点和回收站链接
+。
+=> 。
+
+打开回收站
+=> ごみ箱を開く
+
+在资源管理器里查看回收站里有什么。
+=> エクスプローラーでごみ箱の中身を確認します。
+
+# Privacy
+正在检查隐私设置…
+=> プライバシー設定を確認しています…
+
+# Privacy
+隐私与广告
+=> プライバシーと広告
+
+# Privacy
+还有 {0} 项 Windows 广告或数据收集没有关闭
+=> Windows の広告やデータ収集がまだ {0} 件オンになっています
+
+# Privacy
+推荐关闭的广告和数据收集都已关闭
+=> おすすめの広告・データ収集はすべてオフです
+
+# Privacy
+去关闭
+=> オフにする
+
+# Privacy
+已关闭
+=> オフ
+
+# Privacy
+部分关闭
+=> 一部オフ
+
+# Privacy
+默认
+=> 既定
+
+# Privacy
+广告与推荐
+=> 広告とおすすめ
+
+# Privacy
+搜索
+=> 検索
+
+# Privacy
+AI 功能
+=> AI 機能
+
+# Privacy
+数据收集
+=> データ収集
+
+# Privacy
+开始菜单里的推荐
+=> スタート メニューのおすすめ
+
+# Privacy
+开始菜单里推荐的应用、提示和网站。
+=> スタート メニューに表示されるおすすめのアプリ、ヒント、Web サイト。
+
+# Privacy
+锁屏上的趣闻和广告
+=> ロック画面のトリビアと広告
+
+# Privacy
+锁屏图片上叠加的“趣闻、提示”和推广内容。锁屏图片本身不变。
+=> ロック画面の画像に重ねて表示される「トリビアやヒント」と宣伝。画像自体は変わりません。
+
+# Privacy
+使用时弹出的提示和建议
+=> 使用中に表示されるヒントと提案
+
+# Privacy
+Windows 时不时弹出的“小技巧”和使用建议。
+=> Windows がときどき表示する「ヒント」や使い方の提案。
+
+# Privacy
+“设置”里的推荐内容
+=> 「設定」のおすすめコンテンツ
+
+# Privacy
+“设置”应用里推荐的功能和微软服务。
+=> 「設定」アプリでおすすめされる機能や Microsoft のサービス。
+
+# Privacy
+自动安装推荐的应用
+=> おすすめアプリの自動インストール
+
+# Privacy
+Windows 有时会自己装上游戏之类的推荐应用。关闭后不再自动安装，已经装上的不受影响。
+=> Windows がゲームなどのおすすめアプリを勝手にインストールすることがあります。オフにすると自動インストールされなくなります。インストール済みのアプリはそのままです。
+
+# Privacy
+更新后的“欢迎使用”页面
+=> 更新後の「ようこそ」画面
+
+# Privacy
+大版本更新后全屏弹出的“完成设置”和微软服务推广。
+=> 大型アップデート後に全画面で表示される「設定を完了しましょう」と Microsoft サービスの宣伝。
+
+# Privacy
+文件资源管理器里的推广
+=> エクスプローラーの宣伝
+
+# Privacy
+文件资源管理器顶部推荐 OneDrive 和 Microsoft 365 的通知。
+=> エクスプローラーの上部に表示される OneDrive や Microsoft 365 のおすすめ通知。
+
+# Privacy
+广告 ID
+=> 広告識別子
+
+# Privacy
+应用用这个编号跨应用追踪你，推送个性化广告。关闭后广告数量不变，只是不再按你的喜好推送。
+=> アプリはこの番号でアプリをまたいであなたを追跡し、パーソナライズされた広告を表示します。オフにしても広告の数は変わりませんが、好みに合わせた広告ではなくなります。
+
+# Privacy
+根据诊断数据推送的内容
+=> 診断データに基づくおすすめ
+
+# Privacy
+微软根据你的诊断数据推荐提示、广告和服务。
+=> Microsoft が診断データをもとにヒント、広告、サービスをおすすめします。
+
+# Privacy
+网站读取语言列表
+=> Web サイトによる言語リストの取得
+
+# Privacy
+让网站通过 Windows 读取你装了哪些语言，用来显示本地内容。浏览器自己的语言设置不受影响。
+=> Web サイトが Windows からインストール済みの言語を取得し、地域向けの内容を表示します。ブラウザー自体の言語設定には影響しません。
+
+# Privacy
+搜索里的 Bing 网页结果
+=> 検索の Bing Web 結果
+
+# Privacy
+在开始菜单和任务栏里搜索时，混在本机结果里的 Bing 网页结果。关闭后只搜索本机的应用、文件和设置。
+=> スタート メニューやタスク バーで検索したとき、PC 内の結果に混ざって表示される Bing の Web 結果。オフにすると PC 内のアプリ、ファイル、設定だけを検索します。
+
+# Privacy
+搜索要点
+=> 検索のハイライト
+
+# Privacy
+搜索框里每天变化的插图、节日和热门话题。
+=> 検索ボックスに表示される日替わりのイラスト、記念日、話題のトピック。
+
+# Privacy
+“回顾”（Recall）
+=> リコール（Recall）
+
+# Privacy
+定时给屏幕截图，方便以后搜索看过的内容。只有 Copilot+ 电脑有这个功能。
+=> 画面を定期的に保存し、あとで見た内容を検索できるようにする機能。Copilot+ PC にだけあります。
+
+# Privacy
+任务栏上的资讯和天气
+=> タスク バーのニュースと天気
+
+# Privacy
+任务栏上的小组件（Windows 11）或“资讯和兴趣”（Windows 10），里面大多是新闻推送。
+=> タスク バーのウィジェット（Windows 11）または「ニュースと関心事項」（Windows 10）。中身の多くはニュースの配信です。
+
+# Privacy
+可选诊断数据
+=> オプションの診断データ
+
+# Privacy
+把诊断数据限制在“必需”这一档，不再发送浏览记录、应用使用情况等可选数据。家庭版和专业版最低只能设到这一档。
+=> 診断データを「必須」に制限し、閲覧履歴やアプリの使用状況などのオプション データを送らないようにします。Home と Pro ではこれが最低レベルです。
+
+# Privacy
+发送墨迹和键入数据
+=> 手書きと入力のデータ送信
+
+# Privacy
+把你手写和打字的内容发给微软，用来改进识别和输入建议。
+=> 手書きや入力した内容を Microsoft に送り、認識や入力候補の改善に使います。
+
+# Privacy
+反馈调查弹窗
+=> フィードバックのアンケート
+
+# Privacy
+Windows 时不时弹出来问“你有多大可能推荐 Windows”。
+=> Windows がときどき「Windows を勧める可能性はどのくらいですか」と尋ねてきます。
+
+# Privacy
+活动历史
+=> アクティビティの履歴
+
+# Privacy
+记录你打开过的应用和文件，并上传到微软账户用来在其他设备上继续。
+=> 開いたアプリやファイルを記録し、Microsoft アカウントにアップロードして他のデバイスで続きができるようにします。
+
+# Privacy
+已关闭 {0} 项 · 共 {1} 项
+=> オフ {0} 件 · 全 {1} 件
+
+# Privacy
+ · 还有 {0} 项推荐关闭
+=>  · おすすめのオフがあと {0} 件
+
+# Privacy
+ · 推荐的都已关闭
+=>  · おすすめはすべてオフ
+
+# Privacy
+已关闭“{0}”
+=> 「{0}」をオフにしました
+
+# Privacy
+“{0}”已恢复默认
+=> 「{0}」を既定に戻しました
+
+# Privacy
+，重启资源管理器后生效。
+=> 。エクスプローラーを再起動すると反映されます。
+
+# Privacy
+没有要关闭的
+=> オフにする項目はありません
+
+# Privacy
+剩下的 {0} 项需要管理员权限。请点底部的“以管理员身份重新打开”。
+=> 残りの {0} 件は管理者権限が必要です。下の「管理者として再起動」をクリックしてください。
+
+# Privacy
+推荐关闭的项目都已经关闭了。
+=> おすすめの項目はすべてオフになっています。
+
+# Privacy
+将关闭下面 {0} 项，随时可以在这里恢复默认：\n\n
+=> 次の {0} 件をオフにします。ここでいつでも既定に戻せます。\n\n
+
+# Privacy
+\n\n另有 {0} 项需要管理员权限，这次先跳过。
+=> \n\nほかに管理者権限が必要な {0} 件は、今回はスキップします。
+
+# Privacy
+一键关闭推荐项
+=> おすすめを一括オフ
+
+# Privacy
+已关闭 {0} 项
+=> {0} 件をオフにしました
+
+# Privacy
+，有几项要重启资源管理器后生效。
+=> 。一部はエクスプローラーの再起動後に反映されます。
+
+# Privacy
+所有项目都是 Windows 默认设置。
+=> すべて Windows の既定の設定です。
+
+# Privacy
+全部恢复默认
+=> すべて既定に戻す
+
+# Privacy
+把这 {0} 项改回 Windows 的默认设置？
+=> この {0} 件を Windows の既定の設定に戻しますか？
+
+# Privacy
+恢复默认
+=> 既定に戻す
+
+# Privacy
+已恢复 {0} 项
+=> {0} 件を戻しました
+
+# Privacy
+下面几项是对所有用户生效的，修改需要管理员权限：\n\n{0}\n\n请点底部的“以管理员身份重新打开”。
+=> 次の項目はすべてのユーザーに適用されるため、変更には管理者権限が必要です。\n\n{0}\n\n下の「管理者として再起動」をクリックしてください。
+
+# Privacy
+重启资源管理器
+=> エクスプローラーを再起動
+
+# Privacy
+任务栏和桌面会消失几秒再出现，打开的文件夹窗口会关闭。正在复制的文件请等复制完再重启。
+=> タスク バーとデスクトップが数秒消えてから戻り、開いているフォルダーのウィンドウは閉じます。ファイルのコピー中はコピーが終わってから再起動してください。
+
+# Privacy
+重启
+=> 再起動
+
+# Privacy
+资源管理器已重启。
+=> エクスプローラーを再起動しました。
+
+# Privacy
+没有重启成功
+=> 再起動できませんでした
+
+# Privacy
+关掉 Windows 自带的广告、推荐和数据收集。改的都是 Windows 自己的设置，不停服务、不改系统文件，随时可以恢复默认。鼠标停在说明上可以看到具体改了哪个注册表值。
+=> Windows に組み込まれた広告、おすすめ、データ収集をオフにします。変更するのは Windows 自身の設定だけで、サービスの停止やシステム ファイルの変更はしません。いつでも既定に戻せます。説明にマウスを合わせると、変更するレジストリ値が表示されます。
+
+# Privacy
+有几项要重启资源管理器才生效。任务栏会消失几秒再出现，打开的文件夹窗口会关闭。
+=> 一部の項目はエクスプローラーの再起動後に反映されます。タスク バーが数秒消えてから戻り、開いているフォルダーのウィンドウは閉じます。
+
+# Privacy
+开：Windows 默认。关：关闭这项广告或数据收集。
+=> オン：Windows の既定。オフ：この広告やデータ収集をオフにします。
+
+# Privacy
+推荐关闭
+=> オフ推奨
+
+# Privacy
+需要管理员
+=> 管理者が必要
+
+# Privacy
+确定关闭
+=> オフにする
+
+# StoreApps
+任务栏上的 Copilot 按钮和旧版 Copilot 侧边栏。新版 Copilot 是单独的应用，可以在“更多功能”的“预装应用清理”里删掉。
+=> タスク バーの Copilot ボタンと旧バージョンの Copilot サイドバー。新しい Copilot は単独のアプリなので「その他のツール」の「プリインストール アプリの削除」で削除できます。
+
+# StoreApps
+建议删除
+=> 削除をおすすめ
+
+# StoreApps
+看需要
+=> 必要に応じて
+
+# StoreApps
+其他应用
+=> その他のアプリ
+
+# StoreApps
+King 游戏（Candy Crush 等）
+=> King のゲーム（Candy Crush など）
+
+# StoreApps
+预装的推广游戏。
+=> プリインストールされた宣伝用のゲームです。
+
+# StoreApps
+Microsoft 纸牌合集
+=> Microsoft Solitaire Collection
+
+# StoreApps
+带广告的纸牌游戏，去广告要付费订阅。
+=> 広告付きのトランプゲームです。広告を消すには有料サブスクリプションが必要です。
+
+# StoreApps
+资讯
+=> ニュース
+
+# StoreApps
+微软的新闻推送应用。
+=> Microsoft のニュース配信アプリです。
+
+# StoreApps
+必应搜索
+=> Bing 検索
+
+# StoreApps
+把系统里的网页搜索交给 Bing 的组件。删掉不影响搜索本机文件。
+=> システムの Web 検索を Bing に渡すコンポーネントです。削除しても PC 内のファイル検索には影響しません。
+
+# StoreApps
+获取帮助
+=> 問い合わせ
+
+# StoreApps
+微软的在线客服入口。
+=> Microsoft のオンライン サポートの窓口です。
+
+# StoreApps
+使用技巧
+=> ヒント
+
+# StoreApps
+介绍 Windows 功能的“提示”应用。
+=> Windows の機能を紹介する「ヒント」アプリです。
+
+# StoreApps
+反馈中心
+=> フィードバック Hub
+
+# StoreApps
+给微软提交意见和问题报告用的。
+=> Microsoft に意見や問題を報告するためのアプリです。
+
+# StoreApps
+Microsoft 365（Office）入口
+=> Microsoft 365（Office）の入口
+
+# StoreApps
+推广 Office 订阅的入口应用，不是 Office 本身。删掉不影响已安装的 Word、Excel。
+=> Office のサブスクリプションを宣伝する入口アプリで、Office 本体ではありません。削除してもインストール済みの Word や Excel には影響しません。
+
+# StoreApps
+已经停止服务的语音助手。
+=> サービスが終了した音声アシスタントです。
+
+# StoreApps
+人脉
+=> 連絡先
+
+# StoreApps
+旧版联系人应用，很少有人用。
+=> 旧バージョンの連絡先アプリで、使う人はほとんどいません。
+
+# StoreApps
+微软已经在 2025 年停止 Skype 服务。
+=> Microsoft は 2025 年に Skype のサービスを終了しました。
+
+# StoreApps
+混合现实门户
+=> Mixed Reality ポータル
+
+# StoreApps
+只有 VR 头显才用得到。
+=> VR ヘッドセットがある場合にだけ使います。
+
+# StoreApps
+3D 查看器
+=> 3D ビューアー
+
+# StoreApps
+查看 3D 模型文件用的。
+=> 3D モデルのファイルを表示するアプリです。
+
+# StoreApps
+3D 画图，微软已经不再更新。经典的“画图”是另一个应用，不受影响。
+=> 3D のペイントアプリで、Microsoft はもう更新していません。従来の「ペイント」は別のアプリなので影響しません。
+
+# StoreApps
+3D 打印
+=> 3D プリント
+
+# StoreApps
+只有 3D 打印机才用得到。
+=> 3D プリンターがある場合にだけ使います。
+
+# StoreApps
+电影和电视
+=> 映画 & テレビ
+
+# StoreApps
+微软的视频商店和播放器。删掉后视频会用“媒体播放器”或你装的播放器打开。
+=> Microsoft の動画ストアとプレーヤーです。削除すると動画は「メディア プレーヤー」かインストール済みのプレーヤーで開きます。
+
+# StoreApps
+已经停止更新的旧版 OneNote。Office 里的 OneNote 不受影响。
+=> 更新が終了した旧バージョンの OneNote です。Office の OneNote には影響しません。
+
+# StoreApps
+付费 WLAN 和手机套餐
+=> 有料 Wi-Fi とモバイル プラン
+
+# StoreApps
+购买移动数据套餐用的，大多数地区用不到。
+=> モバイル データ プランを購入するアプリで、ほとんどの地域では使いません。
+
+# StoreApps
+消息
+=> メッセージング
+
+# StoreApps
+旧版短信应用，现在已经没有用了。
+=> 旧バージョンのメッセージ アプリで、今は使えません。
+
+# StoreApps
+Microsoft 钱包
+=> Microsoft ウォレット
+
+# StoreApps
+已经停止服务。
+=> サービスは終了しています。
+
+# StoreApps
+自动化流程工具，一般用户用不到。
+=> 作業を自動化するツールで、一般のユーザーには不要です。
+
+# StoreApps
+微软的在线视频编辑器，高级功能要订阅。
+=> Microsoft のオンライン動画エディターで、高度な機能はサブスクリプションが必要です。
+
+# StoreApps
+Microsoft 家庭安全
+=> Microsoft ファミリー セーフティ
+
+# StoreApps
+家长控制的推广应用。需要管孩子用电脑的话可以留着。
+=> 保護者による管理の宣伝アプリです。子どもの PC 利用を管理するなら残してください。
+
+# StoreApps
+面向开发者的工具，微软已经停止开发。
+=> 開発者向けのツールで、Microsoft は開発を終了しました。
+
+# StoreApps
+天气
+=> 天気
+
+# StoreApps
+微软的天气应用。
+=> Microsoft の天気アプリです。
+
+# StoreApps
+地图
+=> マップ
+
+# StoreApps
+离线地图和导航。
+=> オフライン マップとナビゲーションです。
+
+# StoreApps
+待办事项清单，和微软账户同步。
+=> Microsoft アカウントと同期する ToDo リストです。
+
+# StoreApps
+媒体播放器
+=> メディア プレーヤー
+
+# StoreApps
+Windows 11 自带的音乐和视频播放器（以前叫 Groove 音乐）。装了别的播放器可以删掉。
+=> Windows 11 に付属の音楽・動画プレーヤー（旧 Groove ミュージック）です。別のプレーヤーがあれば削除できます。
+
+# StoreApps
+快速助手
+=> クイック アシスト
+
+# StoreApps
+让别人远程帮你操作电脑。需要远程协助时会用到。
+=> 他の人に PC をリモートで操作してもらうアプリです。リモート サポートを受けるときに使います。
+
+# StoreApps
+Teams（个人版）
+=> Teams（個人用）
+
+# StoreApps
+微软的聊天和视频会议软件。工作要用就留着。
+=> Microsoft のチャット・ビデオ会議アプリです。仕事で使うなら残してください。
+
+# StoreApps
+新版 Outlook
+=> 新しい Outlook
+
+# StoreApps
+取代“邮件和日历”的新版邮件应用。用别的邮件软件可以删掉。
+=> 「メール/カレンダー」に代わる新しいメール アプリです。別のメール ソフトを使うなら削除できます。
+
+# StoreApps
+邮件和日历
+=> メール/カレンダー
+
+# StoreApps
+旧版邮件和日历应用，微软已经停止支持。
+=> 旧バージョンのメール/カレンダー アプリで、Microsoft のサポートは終了しています。
+
+# StoreApps
+微软的 AI 助手应用。
+=> Microsoft の AI アシスタント アプリです。
+
+# StoreApps
+手机连接
+=> スマートフォン連携
+
+# StoreApps
+在电脑上收发手机短信、看手机照片。用不到可以删掉。
+=> PC でスマートフォンのメッセージや写真を扱うアプリです。使わないなら削除できます。
+
+# StoreApps
+时钟
+=> 時計
+
+# StoreApps
+闹钟、计时器和专注时段。
+=> アラーム、タイマー、集中モードです。
+
+# StoreApps
+录音机
+=> サウンド レコーダー
+
+# StoreApps
+简单的录音应用。
+=> シンプルな録音アプリです。
+
+# StoreApps
+旧版 Xbox 应用。不玩 Xbox 和 PC Game Pass 游戏可以删掉。
+=> 旧バージョンの Xbox アプリです。Xbox や PC Game Pass のゲームをしないなら削除できます。
+
+# StoreApps
+Xbox 应用，用来玩 PC Game Pass 游戏。不玩可以删掉。
+=> PC Game Pass のゲームを遊ぶための Xbox アプリです。遊ばないなら削除できます。
+
+# StoreApps
+按 Win+G 打开的游戏工具栏，也能录屏。不玩游戏可以删掉。
+=> Win+G で開くゲーム用ツール バーで、画面の録画もできます。ゲームをしないなら削除できます。
+
+# StoreApps
+预装的第三方推广应用。如果是你自己装的、正在用，就留着。
+=> プリインストールされたサードパーティの宣伝アプリです。自分でインストールして使っているなら残してください。
+
+# StoreApps
+厂商预装的杀毒软件试用版。到期后会不停提醒付费，Windows 自带的 Defender 已经够用。
+=> メーカーがプリインストールしたウイルス対策ソフトの体験版です。期限が切れると有料版への案内が続きます。Windows 付属の Defender で十分です。
+
+# StoreApps
+PowerShell 没有返回结果。
+=> PowerShell から結果が返りませんでした。
+
+# StoreApps
+正在读取已安装的应用…
+=> インストール済みのアプリを読み込んでいます…
+
+# StoreApps
+没有读到应用列表。这个功能需要 Windows 10 或 11 自带的 PowerShell。
+=> アプリの一覧を読み込めませんでした。この機能には Windows 10 または 11 に付属の PowerShell が必要です。
+
+# StoreApps
+找到 {0} 个预装应用
+=> プリインストール アプリが {0} 個見つかりました
+
+# StoreApps
+预装应用清理
+=> プリインストール アプリの削除
+
+# StoreApps
+显示其他应用（{0}）
+=> その他のアプリを表示（{0}）
+
+# StoreApps
+没有找到常见的预装应用，已经很干净了。
+=> よくあるプリインストール アプリは見つかりませんでした。すっきりしています。
+
+# StoreApps
+已选 {0} 个
+=> {0} 個を選択
+
+# StoreApps
+勾选要删除的应用
+=> 削除するアプリにチェックを入れてください
+
+# StoreApps
+将为当前用户删除下面 {0} 个应用：\n\n
+=> 現在のユーザーから次の {0} 個のアプリを削除します。\n\n
+
+# StoreApps
+\n\n大部分可以在应用商店里重新安装，删除记录会留在本页下方。
+=> \n\nほとんどは Microsoft Store から再インストールできます。削除の記録はこのページの下に残ります。
+
+# StoreApps
+删除预装应用
+=> プリインストール アプリの削除
+
+# StoreApps
+正在删除“{0}”… ({1}/{2})
+=> 「{0}」を削除しています… ({1}/{2})
+
+# StoreApps
+已删除 {0} 个应用
+=> {0} 個のアプリを削除しました
+
+# StoreApps
+有些应用没有删掉
+=> 削除できなかったアプリがあります
+
+# StoreApps
+\n\n有的应用被 Windows 设为不能删除，或者正在运行。可以关掉它再试一次。
+=> \n\nWindows によって削除できないように設定されているか、実行中の可能性があります。アプリを閉じてからもう一度試してください。
+
+# StoreApps
+打不开应用商店
+=> Microsoft Store を開けません
+
+# StoreApps
+删除 Windows 和电脑厂商预装、平时用不到的应用，比如游戏和推广应用。
+=> Windows や PC メーカーがプリインストールした、普段使わないゲームや宣伝アプリを削除します。
+
+# StoreApps
+删除 Windows 自带或电脑厂商预装、平时用不到的应用。只对当前用户删除，大部分可以从 Microsoft Store 重新安装。应用商店、安全中心、运行库等系统需要的组件不会列出来。
+=> Windows 付属や PC メーカーがプリインストールした、普段使わないアプリを削除します。削除は現在のユーザーだけが対象で、ほとんどは Microsoft Store から再インストールできます。Microsoft Store、セキュリティ センター、ランタイムなどシステムに必要なコンポーネントは表示しません。
+
+# StoreApps
+显示其他应用
+=> その他のアプリを表示
+
+# StoreApps
+选中建议删除的
+=> おすすめをすべて選択
+
+# StoreApps
+第三方推广
+=> サードパーティの宣伝
+
+# StoreApps
+删除过的应用
+=> 削除したアプリ
+
+# StoreApps
+在应用商店里装回
+=> Microsoft Store で再インストール
+
+# StoreApps
+清理 Windows 预装应用 ›
+=> Windows のプリインストール アプリを削除 ›
+
+# StoreApps
+Windows 自带和厂商预装的应用商店应用不在这个列表里，要在“预装应用清理”里删除。
+=> Windows 付属やメーカーがプリインストールした Microsoft Store アプリはこの一覧にありません。「プリインストール アプリの削除」で削除してください。
+
+# Winget
+正在更新…
+=> 更新しています…
+
+# Winget
+已更新
+=> 更新しました
+
+# Winget
+没有更新成功
+=> 更新できませんでした
+
+# Winget
+没有找到 winget。
+=> winget が見つかりません。
+
+# Winget
+winget 显示的 Id 不完整，请在命令行里手动更新。
+=> winget が表示した ID が途中で切れています。コマンド ラインで手動で更新してください。
+
+# Winget
+超过 30 分钟还没有完成，已停止。
+=> 30 分を過ぎても終わらなかったため停止しました。
+
+# Winget
+没有适用的新版本。
+=> 適用できる新しいバージョンがありません。
+
+# Winget
+安装程序要求先关掉这个软件，请关掉后再试。
+=> インストーラーがこのアプリを閉じるよう求めています。閉じてからもう一度試してください。
+
+# Winget
+这个软件正在运行，请关掉后再试。
+=> このアプリは実行中です。閉じてからもう一度試してください。
+
+# Winget
+安装程序需要重启电脑才能完成。
+=> インストールを完了するには PC の再起動が必要です。
+
+# Winget
+安装程序的哈希校验没有通过，已停止安装。
+=> インストーラーのハッシュ検証に失敗したため、インストールを中止しました。
+
+# Winget
+下载失败，请检查网络。
+=> ダウンロードに失敗しました。ネットワークを確認してください。
+
+# Winget
+连不上软件源，请检查网络。
+=> ソースに接続できません。ネットワークを確認してください。
+
+# Winget
+winget 返回 0x{0:X8}
+=> winget の戻り値 0x{0:X8}
+
+# Winget
+正在检查更新…
+=> 更新を確認しています…
+
+# Winget
+winget 正在查找新版本，第一次可能要等一会儿。
+=> winget が新しいバージョンを探しています。初回は少し時間がかかることがあります。
+
+# Winget
+有 {0} 个软件可以更新
+=> {0} 個のアプリを更新できます
+
+# Winget
+软件都是最新的
+=> アプリはすべて最新です
+
+# Winget
+winget 没有找到可以更新的软件。不是通过 winget 或安装程序登记的软件（比如绿色版）查不到。
+=> winget は更新できるアプリを見つけませんでした。winget やインストーラーで登録されていないアプリ（ポータブル版など）は確認できません。
+
+# Winget
+软件更新
+=> アプリの更新
+
+# Winget
+这台电脑上没有 winget。它是 Windows 10 和 11 自带的“应用安装程序”的一部分，可以从应用商店免费安装或更新。
+=> この PC には winget がありません。winget は Windows 10 と 11 に付属の「アプリ インストーラー」の一部で、Microsoft Store から無料でインストール・更新できます。
+
+# Winget
+检查更新失败：
+=> 更新の確認に失敗しました：
+
+# Winget
+勾选要更新的软件
+=> 更新するアプリにチェックを入れてください
+
+# Winget
+将用 winget 更新下面 {0} 个软件：\n\n
+=> winget で次の {0} 個のアプリを更新します。\n\n
+
+# Winget
+\n\n安装程序会在后台静默运行。正在用的软件请先保存好内容，有的软件更新时会被关掉。
+=> \n\nインストーラーはバックグラウンドで自動的に実行されます。使用中のアプリは先に作業を保存してください。更新中に閉じられるアプリもあります。
+
+# Winget
+更新软件
+=> アプリの更新
+
+# Winget
+开始更新
+=> 更新を開始
+
+# Winget
+正在更新“{0}”… ({1}/{2})
+=> 「{0}」を更新しています… ({1}/{2})
+
+# Winget
+已更新 {0} 个软件。
+=> {0} 個のアプリを更新しました。
+
+# Winget
+已更新 {0} 个软件，{1} 个没有成功，原因写在各自右边。
+=> {0} 個のアプリを更新しました。{1} 個は失敗しました。理由はそれぞれの右側に表示しています。
+
+# Winget
+用 Windows 自带的 winget 查找有新版本的软件，一次全部更新。
+=> Windows 付属の winget で新しいバージョンがあるアプリを探し、まとめて更新します。
+
+# Winget
+检查更新
+=> 更新を確認
+
+# Winget
+更新所选
+=> 選択したものを更新
+
+# Winget
+用 Windows 自带的 winget 查找已安装软件的新版本并安装。查找和下载由 winget 联网完成，本工具本身不联网。更新时静默安装，有的软件要先关掉才能更新。
+=> Windows 付属の winget で、インストール済みアプリの新しいバージョンを探してインストールします。検索とダウンロードは winget がネットに接続して行い、このツール自体は接続しません。更新は自動で行われ、閉じてからでないと更新できないアプリもあります。
+
+# Winget
+全选
+=> すべて選択
+
+# Winget
+在应用商店安装“应用安装程序”
+=> Microsoft Store で「アプリ インストーラー」を入手
+
+# v2.2
+Windows 内核（System）
+=> Windows カーネル（System）
+
+ 等 {0} 个服务
+=>  ほか計 {0} 個のサービス
+
+其他电脑能连上的端口
+=> ほかの PC から接続できるポート
+
+只有本机能连的端口
+=> この PC からだけ接続できるポート
+
+未知用途
+=> 用途不明
+
+ · 监听 
+=>  · 待ち受け 
+
+所有 IPv4 地址
+=> すべての IPv4 アドレス
+
+所有 IPv6 地址
+=> すべての IPv6 アドレス
+
+FTP 文件传输
+=> FTP ファイル転送
+
+明文传输账号密码。不用的话建议关掉提供 FTP 的软件。
+=> アカウントとパスワードを暗号化せずに送ります。使わないなら FTP を提供しているアプリを止めることをおすすめします。
+
+SSH 远程登录
+=> SSH リモート ログイン
+
+别人知道账号密码就能登录这台电脑。不用的话可以在“可选功能”里卸载 OpenSSH 服务器。
+=> アカウントとパスワードを知っていれば誰でもこの PC にログインできます。使わないなら「オプション機能」から OpenSSH サーバーをアンインストールできます。
+
+Telnet 远程登录
+=> Telnet リモート ログイン
+
+明文传输，已经很少用。不用的话建议关掉。
+=> 暗号化されず、今ではほとんど使われていません。使わないなら止めることをおすすめします。
+
+网页服务
+=> Web サービス
+
+有程序在这台电脑上提供网页，通常是开发工具、NAS 客户端或打印机管理之类。
+=> この PC 上のアプリが Web ページを提供しています。開発ツール、NAS クライアント、プリンター管理などによくあります。
+
+加密网页服务（HTTPS）
+=> 暗号化 Web サービス（HTTPS）
+
+有程序在这台电脑上提供加密网页。
+=> この PC 上のアプリが暗号化された Web ページを提供しています。
+
+Windows 远程调用（RPC）
+=> Windows リモート プロシージャ コール（RPC）
+
+Windows 自带的系统服务，很多功能依赖它，不要关。
+=> Windows 標準のシステム サービスです。多くの機能が依存しているので止めないでください。
+
+旧版文件共享（NetBIOS）
+=> 旧式のファイル共有（NetBIOS）
+
+早期 Windows 的文件共享方式。不需要共享文件的话，可以在网卡属性里关掉“NetBIOS over TCP/IP”。
+=> 古い Windows のファイル共有方式です。ファイル共有が不要なら、ネットワーク アダプターのプロパティで「NetBIOS over TCP/IP」を無効にできます。
+
+文件和打印机共享（SMB）
+=> ファイルとプリンターの共有（SMB）
+
+局域网共享文件夹和打印机用的。在公共网络（咖啡店、酒店）下，Windows 防火墙默认会挡住它。
+=> LAN でフォルダーやプリンターを共有するためのものです。公共ネットワーク（カフェ、ホテルなど）では Windows ファイアウォールが既定でブロックします。
+
+网络发现（UPnP）
+=> ネットワーク探索（UPnP）
+
+Windows 用来发现局域网里的设备，在专用网络下才会开放。
+=> Windows が LAN 内のデバイスを見つけるためのもので、プライベート ネットワークでのみ開きます。
+
+远程桌面
+=> リモート デスクトップ
+
+别人知道账号密码就能远程控制这台电脑。不用的话在“设置 → 系统 → 远程桌面”里关掉。
+=> アカウントとパスワードを知っていれば誰でもこの PC を遠隔操作できます。使わないなら「設定 → システム → リモート デスクトップ」でオフにしてください。
+
+Windows 设备连接服务
+=> Windows デバイス接続サービス
+
+Windows 自带服务，用于手机连接、跨设备共享等。
+=> Windows 標準のサービスで、スマートフォン連携やデバイス間の共有などに使われます。
+
+网络发现（WSD）
+=> ネットワーク探索（WSD）
+
+Windows 用来让局域网里的电脑和打印机互相发现。
+=> Windows が LAN 内の PC やプリンターを互いに見つけるためのものです。
+
+VNC 远程控制
+=> VNC リモート操作
+
+别人连上就能看到并控制屏幕。不用的话建议关掉 VNC 软件。
+=> 接続した人が画面を見て操作できます。使わないなら VNC アプリを止めることをおすすめします。
+
+PowerShell 远程管理（WinRM）
+=> PowerShell リモート管理（WinRM）
+
+管理员可以远程在这台电脑上执行命令。家用电脑一般不需要。
+=> 管理者がこの PC でリモートからコマンドを実行できます。家庭用 PC では通常不要です。
+
+传递优化
+=> 配信の最適化
+
+Windows 更新从局域网其他电脑下载更新时用的。可以在“设置 → Windows 更新 → 高级选项 → 传递优化”里关掉。
+=> Windows Update が LAN 内の他の PC から更新をダウンロードするときに使います。「設定 → Windows Update → 詳細オプション → 配信の最適化」でオフにできます。
+
+SQL Server 数据库
+=> SQL Server データベース
+
+数据库对外开放时，请确认设置了强密码。
+=> データベースを外部に公開する場合は、強力なパスワードが設定されているか確認してください。
+
+MySQL 数据库
+=> MySQL データベース
+
+PostgreSQL 数据库
+=> PostgreSQL データベース
+
+Redis 数据库
+=> Redis データベース
+
+Redis 默认没有密码，对外开放很危险。
+=> Redis は既定でパスワードがないため、外部に公開すると危険です。
+
+MongoDB 数据库
+=> MongoDB データベース
+
+数据库对外开放时，请确认开启了登录验证。
+=> データベースを外部に公開する場合は、認証が有効になっているか確認してください。
+
+Windows 系统服务（动态端口）
+=> Windows システム サービス（動的ポート）
+
+Windows 系统服务通过远程调用（RPC）使用的端口，一般不用管。
+=> Windows のシステム サービスが RPC で使うポートです。通常は気にしなくてかまいません。
+
+域名解析（DNS）
+=> 名前解決（DNS）
+
+有程序在这台电脑上提供域名解析。
+=> この PC 上のアプリが DNS サービスを提供しています。
+
+自动获取 IP 地址（DHCP）
+=> IP アドレスの自動取得（DHCP）
+
+连网时获取 IP 地址用的。
+=> ネットワーク接続時に IP アドレスを取得するためのものです。
+
+时间同步（NTP）
+=> 時刻同期（NTP）
+
+Windows 用来同步时钟。
+=> Windows が時計を合わせるためのものです。
+
+早期 Windows 的电脑名查找和共享方式。不需要共享文件的话，可以在网卡属性里关掉“NetBIOS over TCP/IP”。
+=> 古い Windows の PC 名検索と共有の方式です。ファイル共有が不要なら、ネットワーク アダプターのプロパティで「NetBIOS over TCP/IP」を無効にできます。
+
+VPN（IPsec）
+=> VPN（IPsec）
+
+系统的 VPN 和 IPsec 服务使用的端口。
+=> システムの VPN と IPsec サービスが使うポートです。
+
+局域网设备发现（SSDP / UPnP）
+=> LAN デバイス探索（SSDP / UPnP）
+
+用来发现局域网里的电视、音箱、路由器等设备。
+=> LAN 内のテレビ、スピーカー、ルーターなどを見つけるためのものです。
+
+网络发现（WS-Discovery）
+=> ネットワーク探索（WS-Discovery）
+
+局域网名称发现（mDNS）
+=> LAN 名前探索（mDNS）
+
+用来发现局域网里的打印机、投屏设备等，浏览器和系统都会用。
+=> LAN 内のプリンターやキャスト先などを見つけるためのもので、ブラウザーやシステムが使います。
+
+局域网名称解析（LLMNR）
+=> LAN 名前解決（LLMNR）
+
+Windows 在没有 DNS 时查找局域网电脑名用的。
+=> DNS がないときに Windows が LAN 内の PC 名を探すためのものです。
+
+没有找到 Windows 自带的 DISM（dism.exe）。
+=> Windows 標準の DISM（dism.exe）が見つかりません。
+
+需要管理员权限。
+=> 管理者権限が必要です。
+
+DISM 返回 {0}
+=> DISM の戻り値 {0}
+
+系统组件共占用 {0}，其中可以清理约 {1}（被替换的旧组件 {2} · 缓存 {3}
+=> システム コンポーネントは合計 {0}、そのうち約 {1} を削除できます（置き換えられた古いコンポーネント {2} · キャッシュ {3}
+
+ · {0} 个可回收的旧组件包
+=>  · 回収できる古いパッケージ {0} 個
+
+）。
+=> ）。
+
+上次清理：{0}。
+=> 前回のクリーンアップ：{0}。
+
+Windows 认为现在不需要清理。
+=> Windows は今はクリーンアップ不要と判断しています。
+
+正在分析系统组件，要一两分钟…
+=> システム コンポーネントを分析しています。1〜2 分かかります…
+
+没有分析成功：
+=> 分析できませんでした：
+
+清理系统组件旧版本
+=> 古いシステム コンポーネントのクリーンアップ
+
+将用 Windows 自带的 DISM 删除被新版本替换下来的系统组件。\n\n
+=> Windows 標準の DISM で、新しいバージョンに置き換えられたシステム コンポーネントを削除します。\n\n
+
+这些旧版本已经不再使用，和“磁盘清理”里的“Windows 更新清理”是同一个操作。\n\n可能要十几分钟，期间电脑会有点慢，请不要关机。
+=> これらの古いバージョンはもう使われていません。「ディスク クリーンアップ」の「Windows Update のクリーンアップ」と同じ処理です。\n\n10 分以上かかることがあり、その間 PC が少し重くなります。電源を切らないでください。
+
+开始清理
+=> クリーンアップ開始
+
+正在清理系统组件，可能要十几分钟，请不要关机…
+=> システム コンポーネントをクリーンアップしています。10 分以上かかることがあります。電源を切らないでください…
+
+正在清理系统组件 {0:0}%，请不要关机…
+=> システム コンポーネントをクリーンアップしています {0:0}%。電源を切らないでください…
+
+清理完成，正在重新统计…
+=> 完了しました。もう一度集計しています…
+
+清理完成，空出约 {0}。
+=> 完了しました。約 {0} 空きました。
+
+清理完成。
+=> 完了しました。
+
+系统组件旧版本已清理
+=> 古いシステム コンポーネントをクリーンアップしました
+
+没有清理成功：
+=> クリーンアップできませんでした：
+
+{0} 个端口能被其他电脑连上
+=> {0} 個のポートにほかの PC から接続できます
+
+共 {0} 个端口在监听
+=> 待ち受け中のポート {0} 個
+
+ · {0} 个需要留意
+=>  · 注意が必要 {0} 個
+
+显示 UDP 端口（{0}）
+=> UDP ポートを表示（{0}）
+
+Windows 更新残留
+=> Windows 更新の残留物
+
+清理
+=> クリーンアップ
+
+分析
+=> 分析
+
+系统组件旧版本 WinSxS
+=> 古いシステム コンポーネント（WinSxS）
+
+Windows 更新后被新版本替换下来的系统组件。点“分析”看看能清理多少，分析要一两分钟。
+=> Windows 更新で新しいバージョンに置き換えられたシステム コンポーネントです。「分析」で削除できる量を確認できます（1〜2 分）。
+
+列表来自系统的连接表（和 netstat 相同），只显示点“刷新”那一刻的连接；想知道一段时间里哪些软件联过网，用“持续记录”。“监听的端口”里可以看到哪些程序在等待别的电脑连进来。禁止联网用的是 Windows 防火墙规则；限速用的是 Windows 自带的 QoS 策略，只能限制上传。修改需要管理员权限。
+=> 一覧はシステムの接続テーブル（netstat と同じ）から取得しており、「更新」を押した時点の接続だけを表示します。一定時間内にどのソフトが通信したかを知りたいときは「継続記録」を使ってください。「待ち受け中のポート」では、ほかの PC からの接続を待っているアプリを確認できます。接続の禁止には Windows ファイアウォールのルールを、速度制限には Windows 標準の QoS ポリシーを使います（アップロードのみ）。変更には管理者権限が必要です。
+
+联网的软件
+=> 接続中のアプリ
+
+监听的端口
+=> 待ち受け中のポート
+
+显示 UDP 端口
+=> UDP ポートを表示
+
+UDP 没有“连接”的概念，程序收发数据时都会占一个 UDP 端口，所以数量很多，大多不用管。
+=> UDP には「接続」の概念がなく、アプリがデータを送受信するたびに UDP ポートを使うので数が多くなります。ほとんどは気にしなくてかまいません。
+
+“其他电脑能连上”表示程序在本机以外的网络地址上等待连接，实际能不能连上还要看 Windows 防火墙和路由器的设置。标着“注意”的是远程控制、文件共享、数据库这类被别人连上会有风险的端口，不用的话建议关掉对应的功能。
+=> 「ほかの PC から接続できる」とは、アプリがこの PC 以外からも届くアドレスで接続を待っていることを意味します。実際に接続できるかは Windows ファイアウォールとルーターの設定によります。「注意」が付いているのは、リモート操作、ファイル共有、データベースなど、他人に接続されると危険なポートです。使わないなら該当する機能をオフにすることをおすすめします。
+
+现在没有端口在监听。
+=> 待ち受け中のポートはありません。
+
+注意
+=> 注意
+
+
+# v2.3
+{0} 可用，共 {1}
+=> 空き {0} / 合計 {1}
+
+硬盘 {0}
+=> ディスク {0}
+
+良好
+=> 良好
+
+需留意
+=> 要注意
+
+有问题
+=> 問題あり
+
+固件 {0}
+=> ファームウェア {0}
+
+通电时间
+=> 通電時間
+
+开关机次数
+=> 電源投入回数
+
+温度
+=> 温度
+
+（上限 {0} °C）
+=> （上限 {0} °C）
+
+已用寿命
+=> 使用済み寿命
+
+读写错误
+=> 読み書きエラー
+
+读 {0} · 写 {1}
+=> 読み {0} · 書き {1}
+
+这块硬盘没有提供通电时间、温度等记录。
+=> このディスクは通電時間や温度などの記録を提供していません。
+
+通电时间、温度等记录需要管理员权限才能读取。
+=> 通電時間や温度などの記録を読むには管理者権限が必要です。
+
+没有分配盘符的分区
+=> ドライブ文字が割り当てられたパーティションはありません
+
+固态硬盘（SSD）
+=> SSD
+
+机械硬盘（HDD）
+=> HDD
+
+{0} 小时
+=> {0} 時間
+
+（约 {0:0.0} 年）
+=> （約 {0:0.0} 年）
+
+（约 {0} 个月）
+=> （約 {0} か月）
+
+Windows 报告这块硬盘“不正常”。请尽快备份重要文件。
+=> Windows はこのディスクを「異常」と報告しています。大切なファイルをすぐにバックアップしてください。
+
+Windows 报告这块硬盘有警告。建议备份重要文件。
+=> Windows はこのディスクに警告を報告しています。大切なファイルのバックアップをおすすめします。
+
+Windows 报告的运行状态是“{0}”。
+=> Windows が報告している動作状態は「{0}」です。
+
+SSD 的设计寿命已经用完。请尽快备份重要文件，并考虑更换。
+=> SSD の設計寿命を使い切っています。大切なファイルをすぐにバックアップし、交換を検討してください。
+
+SSD 的设计寿命已经用掉 {0}%。建议备份重要文件，并考虑更换。
+=> SSD の設計寿命を {0}% 使っています。大切なファイルをバックアップし、交換を検討してください。
+
+出现过无法纠正的读写错误，可能有数据读不出来。建议备份重要文件。
+=> 修正できない読み書きエラーが発生しています。読めないデータがあるかもしれません。大切なファイルのバックアップをおすすめします。
+
+温度已经到了硬盘自己报告的上限，请检查散热。
+=> 温度がディスク自身の報告する上限に達しています。冷却を確認してください。
+
+这块硬盘没有向 Windows 报告健康状态（常见于 U 盘、移动硬盘和部分 RAID）。
+=> このディスクは Windows に健康状態を報告していません（USB メモリー、外付けディスク、一部の RAID によくあります）。
+
+注册表备份
+=> レジストリのバックアップ
+
+预装应用删除记录
+=> プリインストール アプリの削除記録
+
+删除后就不能用它把卸载时删掉的注册表项恢复回来。
+=> 削除すると、アンインストール時に削除したレジストリ項目を元に戻せなくなります。
+
+删除后“预装应用清理”里就不再列出删过的应用。
+=> 削除すると、「プリインストール アプリの削除」に削除済みのアプリが表示されなくなります。
+
+（文件较大，只显示最后 {0} 个字符）
+=> （ファイルが大きいため、最後の {0} 文字だけを表示しています）
+
+（空文件）
+=> （空のファイル）
+
+读取失败：
+=> 読み込みに失敗しました：
+
+休眠文件：电脑休眠和快速启动时用来保存内存内容，大小接近内存容量。不能直接删。不用休眠的话，可以在管理员命令提示符里运行 powercfg /h off 关掉休眠，它会自动消失。
+=> 休止状態ファイル：休止状態と高速スタートアップでメモリーの内容を保存するためのもので、メモリー容量に近いサイズになります。直接削除はできません。休止状態を使わないなら、管理者のコマンド プロンプトで powercfg /h off を実行すると自動的に消えます。
+
+虚拟内存：Windows 在内存不够用时使用。不要删，也不建议关掉。
+=> 仮想メモリー：メモリーが足りないときに Windows が使います。削除しないでください。無効にすることもおすすめしません。
+
+大版本更新后留下的旧系统，用来退回之前的版本。Windows 一般会在退回期限过后自己删除它。
+=> 大型アップデート後に残る以前の Windows で、前のバージョンに戻すために使います。通常は戻せる期限が過ぎると Windows が自動的に削除します。
+
+系统还原点。可以在“系统属性 → 系统保护 → 配置”里调整它最多占多少空间。
+=> システムの復元ポイントです。「システムのプロパティ → システムの保護 → 構成」で最大使用量を調整できます。
+
+回收站。可以在“垃圾清理”页底部清空。
+=> ごみ箱です。「ジャンク削除」ページの下部で空にできます。
+
+显卡驱动安装时解压出来的文件。驱动装好以后一般可以删。
+=> グラフィック ドライバーのインストール時に展開されたファイルです。ドライバーのインストール後は通常削除できます。
+
+虚拟机、WSL 或 Docker 的虚拟磁盘。不要直接删，请在对应的软件里清理或删除虚拟机。
+=> 仮想マシン、WSL、Docker の仮想ディスクです。直接削除せず、それぞれのアプリでクリーンアップするか仮想マシンを削除してください。
+
+Outlook 的邮件数据。不要删，否则邮件可能丢失。
+=> Outlook のメール データです。削除するとメールが失われるおそれがあります。
+
+iPhone 或 iPad 的备份。请在 iTunes 或“Apple 设备”应用里删除不需要的备份。
+=> iPhone や iPad のバックアップです。不要なバックアップは iTunes または「Apple デバイス」アプリで削除してください。
+
+Steam 的游戏文件。请在 Steam 里卸载不玩的游戏。
+=> Steam のゲーム ファイルです。遊ばないゲームは Steam でアンインストールしてください。
+
+Windows 系统组件。不要手动删，可以用“垃圾清理”里的“系统组件旧版本”清理。
+=> Windows のシステム コンポーネントです。手動で削除せず、「ジャンク削除」の「古いシステム コンポーネント」でクリーンアップしてください。
+
+已安装软件的安装包，卸载和修复软件时要用。不要删。
+=> インストール済みアプリのインストーラーで、アンインストールや修復に必要です。削除しないでください。
+
+Windows 更新的下载缓存。可以用“垃圾清理”里的“Windows 更新缓存”清理。
+=> Windows Update のダウンロード キャッシュです。「ジャンク削除」の「Windows Update キャッシュ」で削除できます。
+
+蓝屏时留下的转储文件，用来分析原因。不需要的话，可以在 Windows 自带的“磁盘清理”里勾选“系统错误内存转储文件”删除。
+=> ブルースクリーン時に残るダンプ ファイルで、原因の分析に使います。不要なら Windows 標準の「ディスク クリーンアップ」で「システム エラーのメモリ ダンプ ファイル」を選んで削除できます。
+
+Windows 系统文件。不要删。
+=> Windows のシステム ファイルです。削除しないでください。
+
+软件的安装文件。不要直接删，请用“彻底卸载”卸载不用的软件。
+=> アプリのインストール ファイルです。直接削除せず、使わないアプリは「アンインストール」で削除してください。
+
+程序崩溃时留下的转储文件。不需要分析崩溃原因的话可以删。
+=> アプリのクラッシュ時に残るダンプ ファイルです。原因を調べる必要がなければ削除できます。
+
+下载文件夹，常有装完就不再需要的安装包和压缩包。
+=> ダウンロード フォルダーです。インストール後は不要になったインストーラーや圧縮ファイルがよくあります。
+
+下载的安装包或压缩包。软件已经装好、内容已经解压的话，一般可以删。
+=> ダウンロードしたインストーラーや圧縮ファイルです。インストールや展開が済んでいれば、通常は削除できます。
+
+各个软件的设置和缓存。不要整个删除，可以进去看是哪个软件占得多。
+=> 各アプリの設定とキャッシュです。まとめて削除せず、中を開いてどのアプリが多く使っているか確認してください。
+
+本工具的日志
+=> このツールのログ
+
+点左边的文件可以在右边查看内容。勾选的文件会移到回收站，删错了可以还原。默认只勾选今天以前的操作日志；注册表备份和预装应用删除记录还有用，要删请自己勾选。
+=> 左のファイルをクリックすると右に内容が表示されます。チェックしたファイルはごみ箱に移動するので、間違えても元に戻せます。既定では今日より前の操作ログだけにチェックが入っています。レジストリのバックアップとアプリの削除記録はまだ役に立つので、削除する場合は自分でチェックしてください。
+
+打开日志文件夹
+=> ログ フォルダーを開く
+
+删除勾选的文件
+=> チェックしたファイルを削除
+
+还没有日志。
+=> まだログはありません。
+
+点左边的文件查看内容。
+=> 左のファイルをクリックして内容を表示します。
+
+共 {0} 个文件 {1} · 已勾选 {2} 个 {3}
+=> {0} 個のファイル {1} · チェック済み {2} 個 {3}
+
+将把 {0} 个文件（{1}）移到回收站：\n\n
+=> {0} 個のファイル（{1}）をごみ箱に移動します。\n\n
+
+\n…等 {0} 个
+=> \n…ほか計 {0} 個
+
+请注意：
+=> ご注意：
+
+删除日志
+=> ログの削除
+
+有文件没有删除
+=> 削除できなかったファイルがあります
+
+清理系统组件旧版本需要管理员权限。\n\n请点底部的“以管理员身份重新打开”。
+=> 古いシステム コンポーネントのクリーンアップには管理者権限が必要です。\n\n下部の「管理者として再起動」をクリックしてください。
+
+不能删除
+=> 削除できません
+
+将把这个文件移到回收站：\n{0}\n大小 {1}\n\n删错了可以从回收站还原。清空回收站后才会真正释放空间。
+=> このファイルをごみ箱に移動します：\n{0}\nサイズ {1}\n\n間違えた場合はごみ箱から元に戻せます。ごみ箱を空にすると実際に空き容量が増えます。
+
+已把“{0}”移到回收站
+=> 「{0}」をごみ箱に移動しました
+
+没有移到回收站
+=> ごみ箱に移動できませんでした
+
+正在读取硬盘信息…
+=> ディスク情報を読み込んでいます…
+
+硬盘健康
+=> ディスクの健康状態
+
+没有读到硬盘信息。可能是 Windows 的存储管理组件不可用，或 PowerShell 被禁用了。
+=> ディスク情報を読み取れませんでした。Windows の記憶域管理コンポーネントが使えないか、PowerShell が無効になっている可能性があります。
+
+{0} 块硬盘有问题，请尽快备份
+=> {0} 台のディスクに問題があります。すぐにバックアップしてください
+
+{0} 块硬盘需要留意
+=> {0} 台のディスクに注意が必要です
+
+{0} 块硬盘，状态良好
+=> {0} 台のディスク、状態は良好です
+
+现在是普通权限，只能读到健康状态。通电时间、温度、寿命等记录需要点底部的“以管理员身份重新打开”。
+=> 現在は通常の権限なので、健康状態しか読めません。通電時間、温度、寿命などの記録は下部の「管理者として再起動」から読めます。
+
+交给 Windows 自带的 DISM 清理，不在上面的扫描里，需要单独点。
+=> Windows 標準の DISM でクリーンアップします。上のスキャンには含まれないので、個別にクリックしてください。
+
+本工具自己的文件
+=> このツール自身のファイル
+
+查看和清理
+=> 表示と削除
+
+操作日志和备份
+=> 操作ログとバックアップ
+
+本工具每次操作的记录、卸载时的注册表备份。删除前可以逐个查看内容。
+=> このツールの操作記録と、アンインストール時のレジストリのバックアップです。削除前に 1 つずつ内容を確認できます。
+
+空间分析
+=> 容量の分析
+
+信息来自 Windows 自身的记录。
+=> 情報は Windows 自身の記録から取得しています。
+
+使用记录
+=> 使用記録
+
+分区
+=> パーティション
+
+别直接删
+=> 直接削除しない
+
+一般可以删
+=> 通常は削除可
+
+
+# v2.3.2
+左右拖动调整宽度
+=> 左右にドラッグして幅を調整
+
+直接删除（不进回收站）
+=> 完全に削除（ごみ箱に入れない）
+
+打开所在文件夹
+=> ファイルの場所を開く
+
+属性
+=> プロパティ
+
+直接删除
+=> 完全に削除
+
+将直接删除这个文件，不进回收站：\n{0}\n大小 {1}\n\n删除后无法从回收站还原。不确定的话，请改用“移到回收站”。
+=> このファイルをごみ箱に入れずに完全に削除します：\n{0}\nサイズ {1}\n\n削除後はごみ箱から元に戻せません。迷う場合は「ごみ箱へ移動」を使ってください。
+
+文件已经不存在。
+=> ファイルはもう存在しません。
+
+文件在分析后被改动过，为安全起见没有删除。请重新分析。
+=> 分析後にファイルが変更されたため、安全のため削除しませんでした。もう一度分析してください。
+
+已删除“{0}”
+=> 「{0}」を削除しました
+
+没有删除
+=> 削除しませんでした
+
+分析只读，不会删除任何东西。双击文件夹进入下一层，在文件上点右键可以打开所在文件夹、查看属性或删除。认得出的大文件会说明是什么、能不能删。
+=> 分析は読み取りのみで、何も削除しません。フォルダーをダブルクリックすると下の階層へ進みます。ファイルを右クリックすると、場所を開く、プロパティ、削除ができます。見分けられる大きなファイルには、その正体と削除してよいかを表示します。
+
+
+# v2.3.4
+你已经在 Windows 自己的设置里把它隐藏了，或者这个版本的 Windows 默认就不显示。点开关可以把它彻底关掉，以后 Windows 更新也不会再打开。
+=> Windows 自身の設定で非表示にしているか、この Windows のバージョンでは既定で表示されません。スイッチを押すと完全にオフにでき、今後の Windows 更新でも再び表示されなくなります。
+
+
+# v2.4
+持续记录
+=> 継続記録
+
+开始记录
+=> 記録を開始
+
+停止记录
+=> 記録を停止
+
+重新开始
+=> 最初から記録
+
+持续记录联网的软件
+=> 通信したソフトを継続して記録
+
+正在记录：{0} 个软件联过网
+=> 記録中：{0} 個のソフトが通信しました
+
+记录结束：{0} 个软件联过网
+=> 記録終了：{0} 個のソフトが通信しました
+
+已记录 {0}
+=> 記録時間 {0}
+
+{0} 小时 {1} 分
+=> {0} 時間 {1} 分
+
+{0} 分 {1} 秒
+=> {0} 分 {1} 秒
+
+{0} 联网
+=> {0} に通信
+
+{0} – {1} 联网
+=> {0} – {1} に通信
+
+（只保留前 {0} 个）
+=> （最初の {0} 個のみ保存）
+
+点“开始记录”，然后照常使用电脑或打开想检查的软件，过一会儿回来看。
+=> 「記録を開始」を押してから、いつも通り PC を使うか、確認したいソフトを開いてください。しばらくしてから戻って確認します。
+
+到目前为止还没有发现软件联网。
+=> 今のところ通信したソフトは見つかっていません。
+
+开始后每秒查看一次连接表，把这段时间里连过网的软件都列出来。记录只在这个页面开着时进行，离开页面就停止，不会在后台运行。不到一秒就断开的连接可能记不到；只记录 TCP 连接。以管理员身份运行时会改用精确模式，一次都不会漏。
+=> 開始すると 1 秒ごとに接続テーブルを確認し、その間に通信したソフトをすべて一覧にします。記録はこのページを開いている間だけ行い、ページを離れると停止します。バックグラウンドでは動きません。1 秒未満で切れる接続は記録できないことがあり、記録するのは TCP 接続だけです。管理者として実行すると精密モードに切り替わり、取りこぼしがなくなります。
+
+
+# v2.5
+ · 精确模式
+=>  · 精密モード
+
+以管理员身份运行时使用精确模式：通过 Windows 的事件跟踪（ETW，资源监视器用的也是它）接收每一次联网，很短的连接和 DNS 查询这类 UDP 数据也能记到。记录只在这个页面开着时进行，离开页面就停止，不会在后台运行。如果本程序在记录途中意外关闭（比如程序出错或被强制结束），请再以管理员身份打开一次本程序，它会关掉留在 Windows 里的记录。
+=> 管理者として実行しているため精密モードを使います。Windows のイベント トレーシング（ETW、リソース モニターも使っている仕組み）で通信を 1 回ずつ受け取るので、ごく短い接続や DNS 問い合わせなどの UDP 通信も記録できます。記録はこのページを開いている間だけ行い、ページを離れると停止します。バックグラウンドでは動きません。記録中にこのプログラムが予期せず終了した場合（エラーや強制終了など）は、もう一度管理者としてこのプログラムを開いてください。Windows に残った記録を停止します。
+
+精确模式没能启动（错误代码 {0}），已改为每秒查看一次连接表。不到一秒就断开的连接可能记不到；只记录 TCP 连接。记录只在这个页面开着时进行，离开页面就停止。
+=> 精密モードを開始できなかったため（エラー コード {0}）、1 秒ごとに接続テーブルを確認する方法に切り替えました。1 秒未満で切れる接続は記録できないことがあり、記録するのは TCP 接続だけです。記録はこのページを開いている間だけ行い、ページを離れると停止します。
+
+
+# v2.5.1
+正在记录联网
+=> 通信を記録中
+
+“联网控制”正在记录联网的软件，退出程序会停止记录，记录的结果也不会保留。确定要退出吗？
+=> 「ネット接続管理」で通信したソフトを記録しています。終了すると記録は停止し、結果も保存されません。終了しますか？
+
+退出
+=> 終了
+

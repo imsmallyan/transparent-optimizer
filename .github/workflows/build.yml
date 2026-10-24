@@ -1,0 +1,53 @@
+name: build
+
+on:
+  push:
+    branches: [main]
+    tags: ['v*']
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: Test
+        run: dotnet run --project tests/CoreTests
+
+      - name: Build
+        run: dotnet build src/PcOptimizer -c Release
+
+      - name: Package
+        shell: pwsh
+        run: |
+          $ver = if ($env:GITHUB_REF_TYPE -eq 'tag') { $env:GITHUB_REF_NAME } else { 'dev' }
+          $out = 'dist/PcOptimizer'
+          New-Item -ItemType Directory -Force $out | Out-Null
+          Copy-Item src/PcOptimizer/bin/Release/net48/PcOptimizer.exe, src/PcOptimizer/bin/Release/net48/PcOptimizer.exe.config, LICENSE $out
+          Copy-Item README*.md $out
+          $hash = (Get-FileHash "$out/PcOptimizer.exe" -Algorithm SHA256).Hash.ToLower()
+          "$hash  PcOptimizer.exe" | Set-Content -Encoding ascii "$out/SHA256.txt"
+          Compress-Archive -Path "$out/*" -DestinationPath "dist/PcOptimizer-$ver.zip"
+          Write-Output "SHA256: $hash"
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: PcOptimizer
+          path: dist/PcOptimizer
+
+      - name: Release
+        if: startsWith(github.ref, 'refs/tags/v')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            dist/*.zip
+            dist/PcOptimizer/SHA256.txt

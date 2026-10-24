@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+
+    <NoWarn>CA1416</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../../src/PcOptimizer/Core/FsUtil.cs" />
+    <Compile Include="../../src/PcOptimizer/Core/OpLog.cs" />
+    <Compile Include="../../src/PcOptimizer/Core/Cleaner.cs" />
+    <Compile Include="../../src/PcOptimizer/Core/DiskUsage.cs" />
+    <Compile Include="../../src/PcOptimizer/Core/StartupManager.cs" />
+    <Compile Include="../../src/PcOptimizer/Core/Programs.cs" />
+    <Compile Include="../../src/PcOptimizer/Core/Residue.cs" />
+    <Compile Include="../../src/PcOptimizer/Core/RegBackup.cs" />
+    <Compile Include="../../src/PcOptimizer/Core/ShellLink.cs" />
+    <Compile Include="../../src/PcOptimizer/Core/RecycleBin.cs" />
+    <Compile Include="../../src/PcOptimizer/Core/NativeMethods.cs" />
+    <Compile Include="../../src/PcOptimizer/Core/Dedup.cs" />
+    <Compile Include="../../src/PcOptimizer/Core/Shredder.cs" />
+    <Compile Include="../../src/PcOptimizer/Core/Loc.cs" />
+    <Compile Include="../../src/PcOptimizer/Core/AppSettings.cs" />
+    <Compile Include="../../src/PcOptimizer/Core/Privacy.cs" />
+    <Compile Include="../../src/PcOptimizer/Core/PowerShell.cs" />
+    <Compile Include="../../src/PcOptimizer/Core/StoreApps.cs" />
+    <Compile Include="../../src/PcOptimizer/Core/Winget.cs" />
+    <Compile Include="../../src/PcOptimizer/Core/Ports.cs" />
+    <Compile Include="../../src/PcOptimizer/Core/WindowsResidue.cs" />
+    <Compile Include="../../src/PcOptimizer/Core/DiskHealth.cs" />
+    <Compile Include="../../src/PcOptimizer/Core/SpaceHints.cs" />
+    <Compile Include="../../src/PcOptimizer/Core/LogFiles.cs" />
+    <Compile Include="../../src/PcOptimizer/Core/NetRecorder.cs" />
+    <EmbeddedResource Include="../../src/PcOptimizer/Lang/*.lang" LogicalName="Lang.%(Filename)%(Extension)" />
+  </ItemGroup>
+</Project>

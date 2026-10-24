@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+
+    <TargetFramework>net48</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>true</UseWindowsForms>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <AssemblyName>PcOptimizer</AssemblyName>
+    <RootNamespace>PcOptimizer</RootNamespace>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>Assets\app.ico</ApplicationIcon>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+    <Version>2.5.1</Version>
+    <Product>透明优化助手</Product>
+    <Description>不联网、不常驻、先预览后执行的电脑优化工具</Description>
+
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+    <GenerateDocumentationFile>false</GenerateDocumentationFile>
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\app.ico" />
+    <Resource Include="Assets\mark.png" />
+    <None Remove="Assets\make-logo.py" />
+
+    <EmbeddedResource Include="Lang\*.lang" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Management" />
+
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+
+  <ItemGroup>
+
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3" PrivateAssets="all" />
+  </ItemGroup>
+
+</Project>

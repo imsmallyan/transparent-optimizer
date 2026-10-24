@@ -1,0 +1,121 @@
+<UserControl x:Class="PcOptimizer.Pages.UninstallPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:PcOptimizer">
+    <UserControl.Resources>
+        <local:ToVisibility x:Key="Vis"/>
+    </UserControl.Resources>
+
+    <Grid Margin="36,22,36,16">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <DockPanel Grid.Row="0">
+            <Button DockPanel.Dock="Right" Style="{StaticResource GhostButton}" Content="刷新" Click="Refresh_Click" VerticalAlignment="Center"/>
+            <StackPanel>
+                <TextBlock x:Name="Headline" Style="{StaticResource H1}" Text="彻底卸载"/>
+                <TextBlock Style="{StaticResource Sub}" Margin="0,6,0,0" TextWrapping="Wrap" TextTrimming="None"
+                           Text="卸载时运行软件自带的卸载程序；卸载完成后自动查找残留的文件夹、注册表和启动项，清理前可以逐项确认。"/>
+                <Button Style="{StaticResource LinkButton}" Content="清理 Windows 预装应用 ›" ToolTip="Windows 自带和厂商预装的应用商店应用不在这个列表里，要在“预装应用清理”里删除。" FontSize="13" Margin="0,6,0,0"
+                        HorizontalAlignment="Left" Click="OpenApps_Click"/>
+            </StackPanel>
+        </DockPanel>
+
+        <DockPanel Grid.Row="1" Margin="0,14,0,0">
+            <CheckBox x:Name="BrokenOnly" DockPanel.Dock="Right" Style="{StaticResource Check}" Margin="10,0,6,0"
+                      Checked="Filter_Changed" Unchecked="Filter_Changed"/>
+            <TextBlock DockPanel.Dock="Right" x:Name="BrokenLabel" Style="{StaticResource Sub}" VerticalAlignment="Center" Margin="20,0,0,0"
+                       Text="只看失效记录"/>
+            <Border Background="{DynamicResource ControlBg}" BorderBrush="{DynamicResource Line}" BorderThickness="1" CornerRadius="15" Padding="12,0">
+                <DockPanel>
+                    <TextBlock DockPanel.Dock="Left" Style="{StaticResource Icon}" Text="&#xE721;" FontSize="13"
+                               Foreground="{DynamicResource TextSub}" Margin="0,0,8,0"/>
+                    <TextBox x:Name="SearchBox" BorderThickness="0" VerticalAlignment="Center" FontSize="13" Padding="0,6"
+                             TextChanged="Search_Changed" ToolTip="按软件名或发行商搜索"/>
+                </DockPanel>
+            </Border>
+        </DockPanel>
+
+        <Border Grid.Row="2" x:Name="RecentPanel" Style="{StaticResource Card}" Margin="0,12,0,0" Padding="14,8,14,10"
+                Background="{DynamicResource PrimaryLight}" BorderBrush="{DynamicResource Primary}" Visibility="Collapsed">
+            <StackPanel>
+                <DockPanel>
+                    <Button DockPanel.Dock="Right" Style="{StaticResource LinkButton}" Content="全部收起"
+                            Click="ClearRecent_Click" VerticalAlignment="Center" ToolTip="只是从这里移走，不会做任何清理。"/>
+                    <TextBlock x:Name="RecentTitle" FontSize="12" Foreground="{DynamicResource PrimaryDark}" VerticalAlignment="Center"
+                               Text="刚卸载的软件，点名字旁的“扫描残留”可以再查一次。"/>
+                </DockPanel>
+                <ScrollViewer MaxHeight="64" Margin="0,6,0,0" VerticalScrollBarVisibility="Auto">
+                    <ItemsControl x:Name="RecentList">
+                        <ItemsControl.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <WrapPanel/>
+                            </ItemsPanelTemplate>
+                        </ItemsControl.ItemsPanel>
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <Border Background="{DynamicResource ControlBg}" BorderBrush="{DynamicResource Line}" BorderThickness="1" CornerRadius="13"
+                                        Padding="10,3,6,3" Margin="0,0,6,6">
+                                    <StackPanel Orientation="Horizontal">
+                                        <TextBlock Text="{Binding Name}" MaxWidth="200" TextTrimming="CharacterEllipsis" ToolTip="{Binding Name}"
+                                                   Foreground="{DynamicResource TextMain}" FontSize="12" VerticalAlignment="Center"/>
+                                        <Button Style="{StaticResource LinkButton}" Content="扫描残留" Tag="{Binding}" Click="ScanResidue_Click"
+                                                Margin="10,0,0,0" VerticalAlignment="Center"/>
+                                        <Button Style="{StaticResource LinkButton}" Content="&#xE711;" Tag="{Binding}" Click="DismissRecent_Click"
+                                                FontFamily="{StaticResource IconFont}" FontSize="10"
+                                                Foreground="{DynamicResource TextSub}" Margin="10,0,2,0" VerticalAlignment="Center" ToolTip="从这里移走"/>
+                                    </StackPanel>
+                                </Border>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                </ScrollViewer>
+            </StackPanel>
+        </Border>
+
+        <ScrollViewer Grid.Row="3" Margin="0,12,0,0" VerticalScrollBarVisibility="Auto">
+            <StackPanel>
+                <Border x:Name="EmptyCard" Style="{StaticResource Card}" Visibility="Collapsed">
+                    <TextBlock Style="{StaticResource Sub}" Text="没有找到符合条件的软件。"/>
+                </Border>
+                <ItemsControl x:Name="ProgramList" VirtualizingPanel.IsVirtualizing="True">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <Border Style="{StaticResource Card}">
+                                <DockPanel>
+                                    <Border DockPanel.Dock="Left" Width="38" Height="38" CornerRadius="8" Margin="0,0,14,0"
+                                            Background="{DynamicResource PrimaryLight}">
+                                        <TextBlock Text="{Binding Initial}" FontSize="17" FontWeight="Bold"
+                                                   Foreground="{DynamicResource PrimaryDark}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    </Border>
+                                    <Button DockPanel.Dock="Right" Style="{StaticResource GhostButton}" Content="卸载" Tag="{Binding}"
+                                            Click="Uninstall_Click" VerticalAlignment="Center" Margin="12,0,0,0"
+                                            Visibility="{Binding IsBroken, Converter={StaticResource Vis}, ConverterParameter=invert}"/>
+                                    <Button DockPanel.Dock="Right" Style="{StaticResource GhostButton}" Content="删除失效记录" Tag="{Binding}"
+                                            Click="RemoveEntry_Click" VerticalAlignment="Center" Margin="12,0,0,0"
+                                            BorderBrush="{DynamicResource Bad}" Foreground="{DynamicResource Bad}"
+                                            Visibility="{Binding IsBroken, Converter={StaticResource Vis}}"/>
+                                    <TextBlock DockPanel.Dock="Right" Text="{Binding Status}" Style="{StaticResource Sub}"
+                                               VerticalAlignment="Center" MaxWidth="260" TextWrapping="Wrap" TextTrimming="None"/>
+                                    <StackPanel VerticalAlignment="Center">
+                                        <StackPanel Orientation="Horizontal">
+                                            <TextBlock Style="{StaticResource H2}" Text="{Binding Name}" TextTrimming="CharacterEllipsis" MaxWidth="420"/>
+                                            <Border Style="{StaticResource Tag}" Background="{DynamicResource BadLight}" Visibility="{Binding IsBroken, Converter={StaticResource Vis}}">
+                                                <TextBlock Text="卸载程序已不存在" FontSize="11" Foreground="{DynamicResource Bad}"/>
+                                            </Border>
+                                        </StackPanel>
+                                        <TextBlock Style="{StaticResource Sub}" Text="{Binding Meta}" Margin="0,3,0,0"/>
+                                    </StackPanel>
+                                </DockPanel>
+                            </Border>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</UserControl>

@@ -1,0 +1,250 @@
+<UserControl x:Class="PcOptimizer.Pages.DiskPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:PcOptimizer">
+    <UserControl.Resources>
+        <local:ToVisibility x:Key="Vis"/>
+    </UserControl.Resources>
+    <Grid Margin="36,22,36,16">
+      <Grid.RowDefinitions>
+          <RowDefinition Height="Auto"/>
+          <RowDefinition Height="*"/>
+      </Grid.RowDefinitions>
+      <Border Grid.Row="0" HorizontalAlignment="Left" Background="{DynamicResource Subtle}" CornerRadius="6" Padding="3" Margin="0,0,0,14">
+          <StackPanel Orientation="Horizontal">
+              <RadioButton x:Name="TabSpace" Style="{StaticResource Segment}" GroupName="DiskTab" Content="空间分析" IsChecked="True" Checked="Tab_Changed"/>
+              <RadioButton x:Name="TabHealth" Style="{StaticResource Segment}" GroupName="DiskTab" Content="硬盘健康" Checked="Tab_Changed"/>
+          </StackPanel>
+      </Border>
+
+      <DockPanel Grid.Row="1" x:Name="HealthPanel" Visibility="Collapsed">
+          <DockPanel DockPanel.Dock="Top" Margin="0,0,0,10">
+              <Button x:Name="HealthRefresh" DockPanel.Dock="Right" Style="{StaticResource GhostButton}" Content="刷新" Click="HealthRefresh_Click" VerticalAlignment="Top"/>
+              <StackPanel>
+                  <TextBlock x:Name="HealthHeadline" Style="{StaticResource H1}" Text="硬盘健康"/>
+                  <TextBlock Style="{StaticResource Sub}" Margin="0,6,0,0" TextWrapping="Wrap" TextTrimming="None"
+                             Text="信息来自 Windows 自身的记录。"/>
+              </StackPanel>
+          </DockPanel>
+          <ProgressBar DockPanel.Dock="Top" x:Name="HealthProgress" Style="{StaticResource Bar}" IsIndeterminate="True" Visibility="Collapsed" Margin="0,0,0,10"/>
+          <ScrollViewer VerticalScrollBarVisibility="Auto" Focusable="False">
+            <StackPanel>
+              <Border x:Name="HealthEmpty" Style="{StaticResource Card}" Visibility="Collapsed">
+                  <TextBlock x:Name="HealthEmptyText" Style="{StaticResource Sub}" TextWrapping="Wrap" TextTrimming="None"/>
+              </Border>
+              <ItemsControl x:Name="DiskCards">
+                <ItemsControl.ItemTemplate>
+                  <DataTemplate>
+                    <Border Style="{StaticResource Card}" Padding="18,14">
+                      <StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                          <TextBlock Style="{StaticResource Icon}" Text="&#xEDA2;" FontSize="18" Foreground="{DynamicResource PrimaryDark}"/>
+                          <TextBlock Style="{StaticResource H2}" Text="{Binding Title}" Margin="10,0,0,0"/>
+                          <Border Style="{StaticResource Tag}" Background="{DynamicResource GoodLight}" Visibility="{Binding IsGood, Converter={StaticResource Vis}}">
+                            <TextBlock Text="{Binding LevelText}" FontSize="11" Foreground="{DynamicResource Good}"/>
+                          </Border>
+                          <Border Style="{StaticResource Tag}" Visibility="{Binding IsWarn, Converter={StaticResource Vis}}">
+                            <TextBlock Text="{Binding LevelText}" FontSize="11" Foreground="{DynamicResource Warn}"/>
+                          </Border>
+                          <Border Style="{StaticResource Tag}" Background="{DynamicResource BadLight}" Visibility="{Binding IsBad, Converter={StaticResource Vis}}">
+                            <TextBlock Text="{Binding LevelText}" FontSize="11" Foreground="{DynamicResource Bad}"/>
+                          </Border>
+                        </StackPanel>
+                        <TextBlock Style="{StaticResource Sub}" Text="{Binding Summary}" Margin="28,4,0,0"/>
+                        <TextBlock Text="{Binding ReasonText}" Foreground="{DynamicResource Warn}" TextWrapping="Wrap" Margin="28,8,0,0"
+                                   Visibility="{Binding HasReasons, Converter={StaticResource Vis}}"/>
+                        <Grid Margin="28,10,0,0">
+                          <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="20"/>
+                            <ColumnDefinition Width="*"/>
+                          </Grid.ColumnDefinitions>
+                          <StackPanel>
+                            <TextBlock Text="使用记录" FontWeight="SemiBold" Margin="0,0,0,4"/>
+                            <TextBlock Style="{StaticResource Sub}" Text="{Binding FactsText}" TextWrapping="Wrap" TextTrimming="None" LineHeight="20"/>
+                          </StackPanel>
+                          <StackPanel Grid.Column="2">
+                            <TextBlock Text="分区" FontWeight="SemiBold" Margin="0,0,0,4"/>
+                            <TextBlock Style="{StaticResource Sub}" Text="{Binding VolumesText}" TextWrapping="Wrap" TextTrimming="None" LineHeight="20"/>
+                          </StackPanel>
+                        </Grid>
+                      </StackPanel>
+                    </Border>
+                  </DataTemplate>
+                </ItemsControl.ItemTemplate>
+              </ItemsControl>
+            </StackPanel>
+          </ScrollViewer>
+      </DockPanel>
+
+      <Grid Grid.Row="1" x:Name="SpacePanel">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <ItemsControl Grid.Row="0" x:Name="DriveList">
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapPanel/>
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <Button Tag="{Binding Name}" Click="Drive_Click" Cursor="Hand" Margin="0,0,10,10" ToolTip="分析这个磁盘">
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border x:Name="Bd" Width="190" Style="{StaticResource Card}" Margin="0">
+                                    <ContentPresenter/>
+                                </Border>
+                                <ControlTemplate.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter TargetName="Bd" Property="BorderBrush" Value="{DynamicResource Primary}"/>
+                                    </Trigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+                        </Button.Template>
+                        <StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Style="{StaticResource Icon}" Text="&#xEDA2;" FontSize="16" Foreground="{DynamicResource PrimaryDark}"/>
+                                <TextBlock Style="{StaticResource H2}" Text="{Binding Name}" Margin="8,0,0,0"/>
+                            </StackPanel>
+                            <ProgressBar Style="{StaticResource Bar}" Value="{Binding UsedPercent, Mode=OneWay}" Margin="0,8,0,6"/>
+                            <TextBlock Style="{StaticResource Sub}" Text="{Binding Text}"/>
+                        </StackPanel>
+                    </Button>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
+
+        <DockPanel Grid.Row="1" Margin="0,4,0,0">
+            <StackPanel DockPanel.Dock="Right" Orientation="Horizontal">
+                <Button Style="{StaticResource GhostButton}" Content="选择文件夹" Click="Browse_Click" Margin="8,0,0,0"/>
+                <Button Style="{StaticResource GhostButton}" Content="上一级" Click="Up_Click" Margin="8,0,0,0"/>
+                <Button x:Name="StopButton" Style="{StaticResource GhostButton}" Content="停止" Click="Stop_Click" Margin="8,0,0,0" Visibility="Collapsed"/>
+                <Button x:Name="GoButton" Style="{StaticResource PrimaryButton}" Content="开始分析" Click="Go_Click" Margin="8,0,0,0" FontSize="13" Padding="20,6"/>
+            </StackPanel>
+            <Border Background="{DynamicResource ControlBg}" BorderBrush="{DynamicResource Line}" BorderThickness="1" CornerRadius="15" Padding="12,0">
+                <TextBox x:Name="PathBox" BorderThickness="0" VerticalAlignment="Center" FontSize="13" KeyDown="PathBox_KeyDown"/>
+            </Border>
+        </DockPanel>
+
+        <StackPanel Grid.Row="2" Margin="0,10,0,0">
+            <ProgressBar x:Name="Progress" Style="{StaticResource Bar}" IsIndeterminate="True" Visibility="Collapsed"/>
+            <TextBlock x:Name="SummaryText" Style="{StaticResource Sub}" Margin="0,6,0,0"
+                       Text="分析只读，不会删除任何东西。双击文件夹进入下一层，在文件上点右键可以打开所在文件夹、查看属性或删除。认得出的大文件会说明是什么、能不能删。"/>
+        </StackPanel>
+
+        <Grid Grid.Row="3" Margin="0,10,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" MinWidth="280"/>
+                <ColumnDefinition Width="14"/>
+                <ColumnDefinition Width="*" MinWidth="280"/>
+            </Grid.ColumnDefinitions>
+
+            <GridSplitter Grid.Column="1" Width="14" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+                          ResizeBehavior="PreviousAndNext" ResizeDirection="Columns" Cursor="SizeWE" Focusable="False"
+                          ToolTip="左右拖动调整宽度">
+                <GridSplitter.Template>
+                    <ControlTemplate TargetType="GridSplitter">
+                        <Border Background="Transparent">
+                            <Border x:Name="Grip" Width="4" Height="40" CornerRadius="2" Background="{DynamicResource Line}"
+                                    HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="Grip" Property="Background" Value="{DynamicResource Primary}"/>
+                            </Trigger>
+                            <Trigger Property="IsDragging" Value="True">
+                                <Setter TargetName="Grip" Property="Background" Value="{DynamicResource Primary}"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </GridSplitter.Template>
+            </GridSplitter>
+
+            <Border Style="{StaticResource Card}" Padding="0" Margin="0">
+                <DockPanel>
+                    <TextBlock DockPanel.Dock="Top" Style="{StaticResource H2}" Text="哪个文件夹最大" Margin="16,12,16,8"/>
+                    <ListBox x:Name="DirList" BorderThickness="0" MouseDoubleClick="DirList_DoubleClick"
+                             ScrollViewer.HorizontalScrollBarVisibility="Disabled" Padding="8,0,8,8">
+                        <ListBox.ItemTemplate>
+                            <DataTemplate>
+                                <Grid Margin="4,5">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="72"/>
+                                        <ColumnDefinition Width="52"/>
+                                    </Grid.ColumnDefinitions>
+                                    <StackPanel>
+                                        <TextBlock Text="{Binding Name}" TextTrimming="CharacterEllipsis" ToolTip="{Binding Path}"/>
+                                        <ProgressBar Style="{StaticResource Bar}" Height="4" Value="{Binding Percent, Mode=OneWay}" Margin="0,4,0,0"/>
+                                        <TextBlock Text="{Binding HintText}" FontSize="12" Foreground="{DynamicResource TextSub}" TextWrapping="Wrap" Margin="0,4,0,0"
+                                                   Visibility="{Binding HintText, Converter={StaticResource Vis}}"/>
+                                    </StackPanel>
+                                    <TextBlock Grid.Column="1" Text="{Binding SizeText}" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                                    <TextBlock Grid.Column="2" Text="{Binding PercentText}" Style="{StaticResource Sub}" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                                </Grid>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                        <ListBox.ItemContainerStyle>
+                            <Style TargetType="ListBoxItem" BasedOn="{StaticResource {x:Type ListBoxItem}}">
+                                <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                            </Style>
+                        </ListBox.ItemContainerStyle>
+                    </ListBox>
+                </DockPanel>
+            </Border>
+
+            <Border Grid.Column="2" Style="{StaticResource Card}" Padding="0" Margin="0">
+                <DockPanel>
+                    <TextBlock DockPanel.Dock="Top" Style="{StaticResource H2}" Text="最大的 50 个文件" Margin="16,12,16,8"/>
+                    <ListBox x:Name="FileList" BorderThickness="0" MouseDoubleClick="FileList_DoubleClick"
+                             PreviewMouseRightButtonDown="FileList_RightDown" ContextMenuOpening="FileList_MenuOpening"
+                             ScrollViewer.HorizontalScrollBarVisibility="Disabled" Padding="8,0,8,8">
+                        <ListBox.ContextMenu>
+                            <ContextMenu>
+                                <MenuItem x:Name="MenuRecycle" Header="移到回收站" Click="MenuRecycle_Click"/>
+                                <MenuItem x:Name="MenuDelete" Header="直接删除（不进回收站）" Click="MenuDelete_Click"/>
+                                <Separator/>
+                                <MenuItem Header="打开所在文件夹" Click="MenuReveal_Click"/>
+                                <MenuItem Header="属性" Click="MenuProps_Click"/>
+                            </ContextMenu>
+                        </ListBox.ContextMenu>
+                        <ListBox.ItemTemplate>
+                            <DataTemplate>
+                                <DockPanel Margin="4,5">
+                                    <TextBlock DockPanel.Dock="Right" Text="{Binding SizeText}" Margin="10,0,0,0" VerticalAlignment="Top"/>
+                                    <Button DockPanel.Dock="Right" Style="{StaticResource LinkButton}" Content="移到回收站" Tag="{Binding}" Click="Recycle_Click"
+                                            Margin="10,0,0,0" VerticalAlignment="Top" Visibility="{Binding CanRecycle, Converter={StaticResource Vis}}"/>
+                                    <StackPanel>
+                                        <TextBlock Text="{Binding Path}" TextTrimming="CharacterEllipsis" ToolTip="{Binding Path}"/>
+                                        <StackPanel Orientation="Horizontal" Margin="0,3,0,0" Visibility="{Binding HintText, Converter={StaticResource Vis}}">
+                                            <Border Style="{StaticResource Tag}" Margin="0,0,6,0" VerticalAlignment="Top" Visibility="{Binding HintKeep, Converter={StaticResource Vis}}">
+                                                <TextBlock Text="别直接删" FontSize="11" Foreground="{DynamicResource Warn}"/>
+                                            </Border>
+                                            <Border Style="{StaticResource Tag}" Margin="0,0,6,0" VerticalAlignment="Top" Background="{DynamicResource GoodLight}"
+                                                    Visibility="{Binding HintDelete, Converter={StaticResource Vis}}">
+                                                <TextBlock Text="一般可以删" FontSize="11" Foreground="{DynamicResource Good}"/>
+                                            </Border>
+                                        </StackPanel>
+                                        <TextBlock Text="{Binding HintText}" FontSize="12" Foreground="{DynamicResource TextSub}" TextWrapping="Wrap" Margin="0,3,0,0"
+                                                   Visibility="{Binding HintText, Converter={StaticResource Vis}}"/>
+                                    </StackPanel>
+                                </DockPanel>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                        <ListBox.ItemContainerStyle>
+                            <Style TargetType="ListBoxItem" BasedOn="{StaticResource {x:Type ListBoxItem}}">
+                                <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                            </Style>
+                        </ListBox.ItemContainerStyle>
+                    </ListBox>
+                </DockPanel>
+            </Border>
+        </Grid>
+      </Grid>
+    </Grid>
+</UserControl>

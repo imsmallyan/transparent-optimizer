@@ -1,0 +1,71 @@
+<Window x:Class="PcOptimizer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="透明优化助手" Icon="Assets/app.ico" Width="1180" Height="720" MinWidth="960" MinHeight="600"
+        WindowStartupLocation="CenterScreen" WindowStyle="None" ResizeMode="CanResize"
+        FontFamily="{DynamicResource UiFont}" FontSize="13"
+        Background="{DynamicResource WindowBg}" Foreground="{DynamicResource TextMain}"
+        TextOptions.TextFormattingMode="Display">
+    <WindowChrome.WindowChrome>
+        <WindowChrome CaptionHeight="40" ResizeBorderThickness="6" GlassFrameThickness="0" CornerRadius="0" UseAeroCaptionButtons="False"/>
+    </WindowChrome.WindowChrome>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.ColumnSpan="2" Orientation="Horizontal" Margin="16,0,0,0" VerticalAlignment="Center">
+            <Image Source="Assets/mark.png" Width="16" Height="16" VerticalAlignment="Center" RenderOptions.BitmapScalingMode="HighQuality"/>
+            <TextBlock Text="透明优化助手" FontSize="12" Margin="12,0,0,0" VerticalAlignment="Center"/>
+            <Border x:Name="AdminBadge" Background="{DynamicResource Subtle}" CornerRadius="4" Padding="6,1" Margin="10,0,0,0" VerticalAlignment="Center">
+                <TextBlock x:Name="AdminText" Foreground="{DynamicResource TextSub}" FontSize="11"/>
+            </Border>
+        </StackPanel>
+        <StackPanel Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Top"
+                    WindowChrome.IsHitTestVisibleInChrome="True">
+            <Button Style="{StaticResource CaptionButton}" Content="&#xE921;" Click="Minimize_Click" ToolTip="最小化"/>
+            <Button x:Name="MaxButton" Style="{StaticResource CaptionButton}" Content="&#xE922;" Click="Maximize_Click" ToolTip="最大化/还原"/>
+            <Button Style="{StaticResource CloseButton}" Content="&#xE8BB;" Click="Close_Click" ToolTip="关闭（程序会完全退出）"/>
+        </StackPanel>
+
+        <DockPanel Grid.Row="1" Width="196" Margin="6,4,6,8">
+            <Button x:Name="SettingsButton" DockPanel.Dock="Bottom" Style="{StaticResource NavAction}" Tag="&#xE713;" Content="设置" Click="Settings_Click"/>
+            <StackPanel>
+            <RadioButton x:Name="NavHome" Style="{StaticResource NavButton}" Tag="&#xE95E;" Content="电脑体检" Checked="Nav_Checked" CommandParameter="home"/>
+            <RadioButton x:Name="NavClean" Style="{StaticResource NavButton}" Tag="&#xE74D;" Content="垃圾清理" Checked="Nav_Checked" CommandParameter="clean"/>
+            <RadioButton x:Name="NavStartup" Style="{StaticResource NavButton}" Tag="&#xE945;" Content="启动加速" Checked="Nav_Checked" CommandParameter="startup"/>
+            <RadioButton x:Name="NavMemory" Style="{StaticResource NavButton}" Tag="&#xE9D9;" Content="内存优化" Checked="Nav_Checked" CommandParameter="memory"/>
+            <RadioButton x:Name="NavUninstall" Style="{StaticResource NavButton}" Tag="&#xE71D;" Content="彻底卸载" Checked="Nav_Checked" CommandParameter="uninstall"/>
+            <RadioButton x:Name="NavPrivacy" Style="{StaticResource NavButton}" Tag="&#xE72E;" Content="隐私与广告" Checked="Nav_Checked" CommandParameter="privacy"/>
+            <RadioButton x:Name="NavDisk" Style="{StaticResource NavButton}" Tag="&#xEDA2;" Content="磁盘分析" Checked="Nav_Checked" CommandParameter="disk"/>
+            <RadioButton x:Name="NavMore" Style="{StaticResource NavButton}" Tag="&#xE712;" Content="更多功能" Checked="Nav_Checked" CommandParameter="more"/>
+            </StackPanel>
+        </DockPanel>
+
+        <Border Grid.Row="1" Grid.Column="1" Background="{DynamicResource PageBg}" BorderBrush="{DynamicResource Line}"
+                BorderThickness="1,1,0,0" CornerRadius="8,0,0,0">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <ContentControl x:Name="PageHost"/>
+                <Border Grid.Row="1" BorderBrush="{DynamicResource Line}" BorderThickness="0,1,0,0" Padding="16,8">
+                    <DockPanel>
+                        <StackPanel Orientation="Horizontal" DockPanel.Dock="Right">
+                            <Button x:Name="ElevateButton" Style="{StaticResource LinkButton}" Content="以管理员身份重新打开" Click="Elevate_Click"/>
+                        </StackPanel>
+                        <TextBlock x:Name="StatusText" Style="{StaticResource Sub}" VerticalAlignment="Center" Margin="0,0,12,0"
+                                   Text="不联网 · 不常驻后台 · 删除前必先预览确认"/>
+                    </DockPanel>
+                </Border>
+            </Grid>
+        </Border>
+    </Grid>
+</Window>

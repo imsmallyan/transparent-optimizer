@@ -1,0 +1,82 @@
+<UserControl x:Class="PcOptimizer.Pages.Tools.UpdateTool"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:PcOptimizer">
+    <UserControl.Resources>
+        <local:ToVisibility x:Key="Vis"/>
+    </UserControl.Resources>
+    <Grid Margin="36,10,36,16">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <DockPanel Grid.Row="0">
+            <Button DockPanel.Dock="Right" x:Name="CheckButton" Style="{StaticResource GhostButton}" Content="检查更新" Click="Check_Click" VerticalAlignment="Center"/>
+            <Button DockPanel.Dock="Right" x:Name="UpdateButton" Style="{StaticResource PrimaryButton}" FontSize="13" Padding="18,6" Margin="0,0,10,0"
+                    Content="更新所选" Click="Update_Click" VerticalAlignment="Center" IsEnabled="False"/>
+            <StackPanel>
+                <TextBlock x:Name="Headline" Style="{StaticResource H1}" Text="软件更新"/>
+                <TextBlock Style="{StaticResource Sub}" Margin="0,6,20,0" TextWrapping="Wrap" TextTrimming="None"
+                           Text="用 Windows 自带的 winget 查找已安装软件的新版本并安装。查找和下载由 winget 联网完成，本工具本身不联网。更新时静默安装，有的软件要先关掉才能更新。"/>
+            </StackPanel>
+        </DockPanel>
+
+        <DockPanel Grid.Row="1" Margin="0,12,0,0">
+            <Button DockPanel.Dock="Right" x:Name="SelectAll" Style="{StaticResource LinkButton}" Content="全选" Click="SelectAll_Click" VerticalAlignment="Center"/>
+            <TextBlock x:Name="Summary" Style="{StaticResource Sub}" VerticalAlignment="Center"/>
+        </DockPanel>
+
+        <ScrollViewer Grid.Row="2" Margin="0,10,0,0" VerticalScrollBarVisibility="Auto">
+            <StackPanel>
+                <Border x:Name="MessageCard" Style="{StaticResource Card}" Visibility="Collapsed">
+                    <StackPanel>
+                        <TextBlock x:Name="MessageText" Style="{StaticResource Sub}" TextWrapping="Wrap" TextTrimming="None"/>
+                        <Button x:Name="InstallWinget" Style="{StaticResource LinkButton}" Content="在应用商店安装“应用安装程序”" Margin="0,8,0,0"
+                                HorizontalAlignment="Left" Click="InstallWinget_Click" Visibility="Collapsed"/>
+                    </StackPanel>
+                </Border>
+                <ItemsControl x:Name="ItemList">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <Border Style="{StaticResource Card}">
+                                <DockPanel>
+                                    <CheckBox DockPanel.Dock="Left" Style="{StaticResource Check}" VerticalAlignment="Center" Margin="0,0,14,0"
+                                              IsChecked="{Binding Selected, Mode=TwoWay}" IsEnabled="{Binding CanSelect}" Click="Select_Click"/>
+                                    <Border DockPanel.Dock="Left" Width="38" Height="38" CornerRadius="8" Margin="0,0,14,0"
+                                            Background="{DynamicResource PrimaryLight}">
+                                        <TextBlock Text="{Binding Initial}" FontSize="17" FontWeight="Bold"
+                                                   Foreground="{DynamicResource PrimaryDark}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    </Border>
+                                    <StackPanel DockPanel.Dock="Right" VerticalAlignment="Center" Margin="16,0,0,0" MaxWidth="300">
+                                        <TextBlock Text="{Binding VersionText}" Foreground="{DynamicResource TextMain}" HorizontalAlignment="Right"/>
+                                        <TextBlock Text="{Binding StateText}" HorizontalAlignment="Right" TextAlignment="Right"
+                                                   TextWrapping="Wrap" TextTrimming="None" Margin="0,3,0,0" ToolTip="{Binding StateText}">
+                                            <TextBlock.Style>
+                                                <Style TargetType="TextBlock" BasedOn="{StaticResource Sub}">
+                                                    <Style.Triggers>
+                                                        <DataTrigger Binding="{Binding State}" Value="Done">
+                                                            <Setter Property="Foreground" Value="{DynamicResource Good}"/>
+                                                        </DataTrigger>
+                                                        <DataTrigger Binding="{Binding State}" Value="Failed">
+                                                            <Setter Property="Foreground" Value="{DynamicResource Bad}"/>
+                                                        </DataTrigger>
+                                                    </Style.Triggers>
+                                                </Style>
+                                            </TextBlock.Style>
+                                        </TextBlock>
+                                    </StackPanel>
+                                    <StackPanel VerticalAlignment="Center">
+                                        <TextBlock Style="{StaticResource H2}" FontSize="14" Text="{Binding Name}" TextTrimming="CharacterEllipsis"/>
+                                        <TextBlock Style="{StaticResource Sub}" FontSize="11" Text="{Binding Meta}" Margin="0,3,0,0" Opacity="0.8"/>
+                                    </StackPanel>
+                                </DockPanel>
+                            </Border>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</UserControl>

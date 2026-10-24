@@ -1,0 +1,14 @@
+bin/
+obj/
+dist/
+test-tmp/
+
+logs/
+settings.ini
+
+发布版/
+
+.vs/
+.vscode/
+*.user
+*.suo
